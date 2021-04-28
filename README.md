@@ -38,16 +38,16 @@ These files should extracted using either command `tar xvf <file>.tar` or comman
 
 ```
 \---data
-	+---det_ingrs.json
-		layers1.json
-		layers2.json
-		images
-		+---train
-			+---<training data>
-		+---val
-			+---<validation data>
-		+---test
-			+---<testing data>
+    +---det_ingrs.json
+        layers1.json
+        layers2.json
+        images
+        +---train
+            +---<training data>
+        +---val
+            +---<validation data>
+        +---test
+            +---<testing data>
 ```
 
 
