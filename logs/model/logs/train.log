@@ -1,0 +1,4387 @@
+Namespace(aux_data_dir='../data', batch_size=40, beam=-1, crop_size=224, decay_lr=True, dropout_decoder_i=0.3, dropout_decoder_r=0.3, dropout_encoder=0.3, embed_size=512, es_metric='loss', eval_split='val', finetune_after=-1, get_perplexity=False, greedy=False, image_model='resnet50', image_size=256, ingrs_only=False, label_smoothing_ingr=0.1, learning_rate=0.001, log_step=10, log_term=False, loss_weight=[1.0, 0.0, 0.0, 0.0], lr_decay_every=1, lr_decay_rate=0.99, max_eval=200, maxnumims=5, maxnuminstrs=10, maxnumlabels=20, maxseqlen=15, model_name='model', n_att=8, n_att_ingrs=4, num_epochs=100, num_workers=1, numgens=3, patience=50, project_name='inversecooking', recipe1m_dir='/scratch/ntallapr/inversecooking/data', recipe_only=True, resume=False, save_dir='/scratch/ntallapr/inversecooking/test1', scale_learning_rate_cnn=0.01, suff='', temperature=1.0, tensorboard=True, transf_layers=16, transf_layers_ingrs=4, transfer_from='im2ingr', use_lmdb=False, use_true_ingrs=False, weight_decay=0.0)
+for split
+split is train
+<torch.utils.data.dataloader.DataLoader object at 0x2b0cec742320>
+for split
+<torch.utils.data.dataloader.DataLoader object at 0x2b0d045d1fd0>
+CNN params: 23508032
+decoder params: 66966518
+device is gpu
+model to devide and benchmarking starting
+benchmarking done
+starting the training
+logger being reset
+Epoch 0. lr: 0.00100
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [0/100], Step [0/50], Losses: recipe_loss: 10.5921, loss: 10.5921, perplexity: 40071.4648, Time: 16.3125
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [0/100], Step [10/50], Losses: recipe_loss: 9.9244, loss: 9.9244, perplexity: 1464461.3397, Time: 44.7561
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [0/100], Step [20/50], Losses: recipe_loss: 5.8419, loss: 5.8419, perplexity: 449.8415, Time: 55.6057
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [0/100], Step [30/50], Losses: recipe_loss: 4.9979, loss: 4.9979, perplexity: 183.3978, Time: 51.8179
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [0/100], Step [40/50], Losses: recipe_loss: 4.6475, loss: 4.6475, perplexity: 137.5389, Time: 49.4567
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [0/100], Step [0/5], Losses: recipe_loss: 4.3945, loss: 4.3945, perplexity: 100.8470, Time: 4.9244
+loaded data
+loaded data
+loaded data
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 1. lr: 0.00099
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [1/100], Step [0/50], Losses: recipe_loss: 4.1636, loss: 4.1636, perplexity: 74.5573, Time: 3.7352
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [1/100], Step [10/50], Losses: recipe_loss: 4.1283, loss: 4.1283, perplexity: 76.4490, Time: 32.1527
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [1/100], Step [20/50], Losses: recipe_loss: 3.9658, loss: 3.9658, perplexity: 69.0254, Time: 32.1806
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [1/100], Step [30/50], Losses: recipe_loss: 3.9504, loss: 3.9504, perplexity: 66.2846, Time: 32.4834
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [1/100], Step [40/50], Losses: recipe_loss: 3.8512, loss: 3.8512, perplexity: 61.8379, Time: 38.4667
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [1/100], Step [0/5], Losses: recipe_loss: 4.0095, loss: 4.0095, perplexity: 72.1180, Time: 3.8286
+loaded data
+loaded data
+loaded data
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 2. lr: 0.00098
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [2/100], Step [0/50], Losses: recipe_loss: 3.6324, loss: 3.6324, perplexity: 48.2947, Time: 3.2814
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [2/100], Step [10/50], Losses: recipe_loss: 3.5430, loss: 3.5430, perplexity: 41.3980, Time: 23.0084
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [2/100], Step [20/50], Losses: recipe_loss: 3.5386, loss: 3.5386, perplexity: 42.3362, Time: 25.8377
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [2/100], Step [30/50], Losses: recipe_loss: 3.5728, loss: 3.5728, perplexity: 43.7052, Time: 23.3518
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [2/100], Step [40/50], Losses: recipe_loss: 3.5226, loss: 3.5226, perplexity: 42.6214, Time: 24.5108
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [2/100], Step [0/5], Losses: recipe_loss: 3.8429, loss: 3.8429, perplexity: 63.8594, Time: 3.1152
+loaded data
+loaded data
+loaded data
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 3. lr: 0.00097
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [3/100], Step [0/50], Losses: recipe_loss: 3.1758, loss: 3.1758, perplexity: 28.4536, Time: 5.1055
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [3/100], Step [10/50], Losses: recipe_loss: 3.2377, loss: 3.2377, perplexity: 31.0021, Time: 22.8016
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [3/100], Step [20/50], Losses: recipe_loss: 3.2008, loss: 3.2008, perplexity: 29.8796, Time: 20.3238
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [3/100], Step [30/50], Losses: recipe_loss: 3.2850, loss: 3.2850, perplexity: 31.8117, Time: 31.0952
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [3/100], Step [40/50], Losses: recipe_loss: 3.2793, loss: 3.2793, perplexity: 32.3371, Time: 23.4711
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [3/100], Step [0/5], Losses: recipe_loss: 3.7849, loss: 3.7849, perplexity: 62.9021, Time: 4.0588
+loaded data
+loaded data
+loaded data
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 4. lr: 0.00096
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [4/100], Step [0/50], Losses: recipe_loss: 2.9422, loss: 2.9422, perplexity: 22.7945, Time: 2.7623
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [4/100], Step [10/50], Losses: recipe_loss: 2.9588, loss: 2.9588, perplexity: 22.6449, Time: 16.9148
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [4/100], Step [20/50], Losses: recipe_loss: 2.9930, loss: 2.9930, perplexity: 23.9849, Time: 19.3897
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [4/100], Step [30/50], Losses: recipe_loss: 3.0150, loss: 3.0150, perplexity: 24.2305, Time: 23.9674
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [4/100], Step [40/50], Losses: recipe_loss: 3.0741, loss: 3.0741, perplexity: 25.9462, Time: 19.7973
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [4/100], Step [0/5], Losses: recipe_loss: 3.7895, loss: 3.7895, perplexity: 65.9976, Time: 2.7365
+loaded data
+loaded data
+loaded data
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 5. lr: 0.00095
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [5/100], Step [0/50], Losses: recipe_loss: 2.7144, loss: 2.7144, perplexity: 17.9106, Time: 3.8479
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [5/100], Step [10/50], Losses: recipe_loss: 2.7613, loss: 2.7613, perplexity: 18.8992, Time: 21.3276
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [5/100], Step [20/50], Losses: recipe_loss: 2.8311, loss: 2.8311, perplexity: 19.9476, Time: 20.7037
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [5/100], Step [30/50], Losses: recipe_loss: 2.8463, loss: 2.8463, perplexity: 20.3823, Time: 16.7092
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [5/100], Step [40/50], Losses: recipe_loss: 2.8093, loss: 2.8093, perplexity: 19.7853, Time: 18.7061
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [5/100], Step [0/5], Losses: recipe_loss: 3.7325, loss: 3.7325, perplexity: 63.4123, Time: 3.1219
+loaded data
+loaded data
+loaded data
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 6. lr: 0.00094
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [6/100], Step [0/50], Losses: recipe_loss: 2.4473, loss: 2.4473, perplexity: 13.4265, Time: 3.4717
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [6/100], Step [10/50], Losses: recipe_loss: 2.6067, loss: 2.6067, perplexity: 15.9972, Time: 21.5491
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [6/100], Step [20/50], Losses: recipe_loss: 2.6699, loss: 2.6699, perplexity: 17.7547, Time: 21.6252
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [6/100], Step [30/50], Losses: recipe_loss: 2.6752, loss: 2.6752, perplexity: 17.1734, Time: 26.5468
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [6/100], Step [40/50], Losses: recipe_loss: 2.6947, loss: 2.6947, perplexity: 17.8323, Time: 20.4100
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [6/100], Step [0/5], Losses: recipe_loss: 3.7028, loss: 3.7028, perplexity: 63.4440, Time: 2.9382
+loaded data
+loaded data
+loaded data
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 7. lr: 0.00093
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [7/100], Step [0/50], Losses: recipe_loss: 2.5431, loss: 2.5431, perplexity: 14.2698, Time: 4.6792
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [7/100], Step [10/50], Losses: recipe_loss: 2.4500, loss: 2.4500, perplexity: 13.7367, Time: 21.7791
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [7/100], Step [20/50], Losses: recipe_loss: 2.4759, loss: 2.4759, perplexity: 14.0797, Time: 17.2108
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [7/100], Step [30/50], Losses: recipe_loss: 2.5700, loss: 2.5700, perplexity: 15.3203, Time: 24.9709
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [7/100], Step [40/50], Losses: recipe_loss: 2.5059, loss: 2.5059, perplexity: 14.8714, Time: 18.9145
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [7/100], Step [0/5], Losses: recipe_loss: 3.7086, loss: 3.7086, perplexity: 71.9964, Time: 4.0512
+loaded data
+loaded data
+loaded data
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 8. lr: 0.00092
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [8/100], Step [0/50], Losses: recipe_loss: 2.2645, loss: 2.2645, perplexity: 11.1887, Time: 6.0295
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [8/100], Step [10/50], Losses: recipe_loss: 2.3189, loss: 2.3189, perplexity: 11.9013, Time: 26.7756
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [8/100], Step [20/50], Losses: recipe_loss: 2.4168, loss: 2.4168, perplexity: 13.2045, Time: 28.4837
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [8/100], Step [30/50], Losses: recipe_loss: 2.3718, loss: 2.3718, perplexity: 12.8365, Time: 22.2991
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [8/100], Step [40/50], Losses: recipe_loss: 2.4539, loss: 2.4539, perplexity: 13.7408, Time: 23.6222
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [8/100], Step [0/5], Losses: recipe_loss: 3.6820, loss: 3.6820, perplexity: 64.9523, Time: 3.4979
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 9. lr: 0.00091
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [9/100], Step [0/50], Losses: recipe_loss: 2.2070, loss: 2.2070, perplexity: 10.8450, Time: 4.1732
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [9/100], Step [10/50], Losses: recipe_loss: 2.2525, loss: 2.2525, perplexity: 11.1117, Time: 21.7667
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [9/100], Step [20/50], Losses: recipe_loss: 2.2349, loss: 2.2349, perplexity: 10.9659, Time: 18.9626
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [9/100], Step [30/50], Losses: recipe_loss: 2.2682, loss: 2.2682, perplexity: 11.4600, Time: 19.1199
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [9/100], Step [40/50], Losses: recipe_loss: 2.3054, loss: 2.3054, perplexity: 11.6342, Time: 16.4642
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [9/100], Step [0/5], Losses: recipe_loss: 3.7376, loss: 3.7376, perplexity: 73.6902, Time: 3.1918
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 10. lr: 0.00090
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [10/100], Step [0/50], Losses: recipe_loss: 2.1921, loss: 2.1921, perplexity: 11.5258, Time: 5.2167
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [10/100], Step [10/50], Losses: recipe_loss: 2.0519, loss: 2.0519, perplexity: 9.0942, Time: 18.3295
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [10/100], Step [20/50], Losses: recipe_loss: 2.1607, loss: 2.1607, perplexity: 10.2651, Time: 24.8449
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [10/100], Step [30/50], Losses: recipe_loss: 2.1856, loss: 2.1856, perplexity: 10.4819, Time: 19.1000
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [10/100], Step [40/50], Losses: recipe_loss: 2.2236, loss: 2.2236, perplexity: 10.8709, Time: 17.9215
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [10/100], Step [0/5], Losses: recipe_loss: 3.7726, loss: 3.7726, perplexity: 79.8117, Time: 2.9059
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 11. lr: 0.00090
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [11/100], Step [0/50], Losses: recipe_loss: 2.0681, loss: 2.0681, perplexity: 9.3618, Time: 3.9335
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [11/100], Step [10/50], Losses: recipe_loss: 1.9728, loss: 1.9728, perplexity: 8.5177, Time: 16.9453
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [11/100], Step [20/50], Losses: recipe_loss: 2.0159, loss: 2.0159, perplexity: 8.8702, Time: 16.0597
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [11/100], Step [30/50], Losses: recipe_loss: 2.0517, loss: 2.0517, perplexity: 9.1668, Time: 16.1720
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [11/100], Step [40/50], Losses: recipe_loss: 2.0894, loss: 2.0894, perplexity: 9.4348, Time: 16.1468
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [11/100], Step [0/5], Losses: recipe_loss: 3.7650, loss: 3.7650, perplexity: 82.0275, Time: 3.2917
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 12. lr: 0.00089
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [12/100], Step [0/50], Losses: recipe_loss: 1.8912, loss: 1.8912, perplexity: 7.9396, Time: 5.6347
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [12/100], Step [10/50], Losses: recipe_loss: 1.9094, loss: 1.9094, perplexity: 7.9830, Time: 19.8909
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [12/100], Step [20/50], Losses: recipe_loss: 1.9647, loss: 1.9647, perplexity: 8.2121, Time: 16.4784
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [12/100], Step [30/50], Losses: recipe_loss: 1.9298, loss: 1.9298, perplexity: 8.1222, Time: 22.9088
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [12/100], Step [40/50], Losses: recipe_loss: 1.9981, loss: 1.9981, perplexity: 8.6400, Time: 20.8856
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [12/100], Step [0/5], Losses: recipe_loss: 3.8375, loss: 3.8375, perplexity: 90.7955, Time: 2.8574
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 13. lr: 0.00088
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [13/100], Step [0/50], Losses: recipe_loss: 1.8200, loss: 1.8200, perplexity: 7.1147, Time: 4.2524
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [13/100], Step [10/50], Losses: recipe_loss: 1.8284, loss: 1.8284, perplexity: 7.2027, Time: 19.7252
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [13/100], Step [20/50], Losses: recipe_loss: 1.8233, loss: 1.8233, perplexity: 7.2006, Time: 23.9172
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [13/100], Step [30/50], Losses: recipe_loss: 1.8913, loss: 1.8913, perplexity: 7.7343, Time: 26.0873
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [13/100], Step [40/50], Losses: recipe_loss: 1.9078, loss: 1.9078, perplexity: 7.8405, Time: 18.2459
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [13/100], Step [0/5], Losses: recipe_loss: 3.8407, loss: 3.8407, perplexity: 90.0188, Time: 2.5301
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 14. lr: 0.00087
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [14/100], Step [0/50], Losses: recipe_loss: 1.7622, loss: 1.7622, perplexity: 6.7549, Time: 4.2340
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [14/100], Step [10/50], Losses: recipe_loss: 1.7698, loss: 1.7698, perplexity: 6.7690, Time: 18.9998
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [14/100], Step [20/50], Losses: recipe_loss: 1.7357, loss: 1.7357, perplexity: 6.6419, Time: 17.1934
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [14/100], Step [30/50], Losses: recipe_loss: 1.8038, loss: 1.8038, perplexity: 7.0437, Time: 16.4033
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [14/100], Step [40/50], Losses: recipe_loss: 1.8228, loss: 1.8228, perplexity: 7.2896, Time: 19.9086
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [14/100], Step [0/5], Losses: recipe_loss: 3.8807, loss: 3.8807, perplexity: 98.1440, Time: 2.7902
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 15. lr: 0.00086
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [15/100], Step [0/50], Losses: recipe_loss: 1.6414, loss: 1.6414, perplexity: 5.7440, Time: 2.8186
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [15/100], Step [10/50], Losses: recipe_loss: 1.7168, loss: 1.7168, perplexity: 6.4548, Time: 17.7111
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [15/100], Step [20/50], Losses: recipe_loss: 1.6890, loss: 1.6890, perplexity: 6.2735, Time: 19.9330
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [15/100], Step [30/50], Losses: recipe_loss: 1.7093, loss: 1.7093, perplexity: 6.4107, Time: 20.0127
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [15/100], Step [40/50], Losses: recipe_loss: 1.7472, loss: 1.7472, perplexity: 6.6674, Time: 16.8846
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [15/100], Step [0/5], Losses: recipe_loss: 3.8694, loss: 3.8694, perplexity: 95.5415, Time: 2.8740
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 16. lr: 0.00085
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [16/100], Step [0/50], Losses: recipe_loss: 1.5906, loss: 1.5906, perplexity: 5.8521, Time: 3.3706
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [16/100], Step [10/50], Losses: recipe_loss: 1.6259, loss: 1.6259, perplexity: 5.8496, Time: 16.9153
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [16/100], Step [20/50], Losses: recipe_loss: 1.6289, loss: 1.6289, perplexity: 5.9494, Time: 16.2092
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [16/100], Step [30/50], Losses: recipe_loss: 1.6647, loss: 1.6647, perplexity: 6.0451, Time: 16.0988
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [16/100], Step [40/50], Losses: recipe_loss: 1.6922, loss: 1.6922, perplexity: 6.2149, Time: 16.3190
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [16/100], Step [0/5], Losses: recipe_loss: 3.8825, loss: 3.8825, perplexity: 101.2172, Time: 2.7332
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 17. lr: 0.00084
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [17/100], Step [0/50], Losses: recipe_loss: 1.5702, loss: 1.5702, perplexity: 5.3776, Time: 3.4625
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [17/100], Step [10/50], Losses: recipe_loss: 1.5898, loss: 1.5898, perplexity: 5.6491, Time: 18.9653
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [17/100], Step [20/50], Losses: recipe_loss: 1.6014, loss: 1.6014, perplexity: 5.7342, Time: 18.0119
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [17/100], Step [30/50], Losses: recipe_loss: 1.6162, loss: 1.6162, perplexity: 5.7454, Time: 17.4105
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [17/100], Step [40/50], Losses: recipe_loss: 1.6076, loss: 1.6076, perplexity: 5.7818, Time: 16.1521
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [17/100], Step [0/5], Losses: recipe_loss: 3.9374, loss: 3.9374, perplexity: 112.1957, Time: 3.3245
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 18. lr: 0.00083
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [18/100], Step [0/50], Losses: recipe_loss: 1.4898, loss: 1.4898, perplexity: 5.3121, Time: 4.0184
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [18/100], Step [10/50], Losses: recipe_loss: 1.5128, loss: 1.5128, perplexity: 5.1756, Time: 23.3535
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [18/100], Step [20/50], Losses: recipe_loss: 1.5483, loss: 1.5483, perplexity: 5.3763, Time: 18.1052
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [18/100], Step [30/50], Losses: recipe_loss: 1.5483, loss: 1.5483, perplexity: 5.3902, Time: 16.1993
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [18/100], Step [40/50], Losses: recipe_loss: 1.5718, loss: 1.5718, perplexity: 5.6371, Time: 16.2034
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [18/100], Step [0/5], Losses: recipe_loss: 3.9437, loss: 3.9437, perplexity: 115.4252, Time: 2.3842
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 19. lr: 0.00083
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [19/100], Step [0/50], Losses: recipe_loss: 1.4661, loss: 1.4661, perplexity: 5.0955, Time: 4.7372
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [19/100], Step [10/50], Losses: recipe_loss: 1.4911, loss: 1.4911, perplexity: 5.0960, Time: 16.2235
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [19/100], Step [20/50], Losses: recipe_loss: 1.5441, loss: 1.5441, perplexity: 5.3559, Time: 16.2041
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [19/100], Step [30/50], Losses: recipe_loss: 1.5218, loss: 1.5218, perplexity: 5.2464, Time: 17.1719
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [19/100], Step [40/50], Losses: recipe_loss: 1.5469, loss: 1.5469, perplexity: 5.4288, Time: 16.2101
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [19/100], Step [0/5], Losses: recipe_loss: 3.9745, loss: 3.9745, perplexity: 116.0054, Time: 2.6283
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 20. lr: 0.00082
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [20/100], Step [0/50], Losses: recipe_loss: 1.4705, loss: 1.4705, perplexity: 4.9381, Time: 3.6755
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [20/100], Step [10/50], Losses: recipe_loss: 1.4551, loss: 1.4551, perplexity: 4.8943, Time: 16.9450
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [20/100], Step [20/50], Losses: recipe_loss: 1.4892, loss: 1.4892, perplexity: 5.0350, Time: 19.2574
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [20/100], Step [30/50], Losses: recipe_loss: 1.4487, loss: 1.4487, perplexity: 4.8751, Time: 17.2340
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [20/100], Step [40/50], Losses: recipe_loss: 1.5046, loss: 1.5046, perplexity: 5.2231, Time: 18.1700
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [20/100], Step [0/5], Losses: recipe_loss: 3.9874, loss: 3.9874, perplexity: 122.1920, Time: 4.9954
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 21. lr: 0.00081
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [21/100], Step [0/50], Losses: recipe_loss: 1.4255, loss: 1.4255, perplexity: 4.7973, Time: 5.5003
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [21/100], Step [10/50], Losses: recipe_loss: 1.3814, loss: 1.3814, perplexity: 4.5965, Time: 16.4752
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [21/100], Step [20/50], Losses: recipe_loss: 1.4519, loss: 1.4519, perplexity: 4.8342, Time: 16.2710
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [21/100], Step [30/50], Losses: recipe_loss: 1.4709, loss: 1.4709, perplexity: 5.0166, Time: 16.2619
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [21/100], Step [40/50], Losses: recipe_loss: 1.4984, loss: 1.4984, perplexity: 5.1011, Time: 16.6446
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [21/100], Step [0/5], Losses: recipe_loss: 3.9701, loss: 3.9701, perplexity: 117.4746, Time: 2.5305
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 22. lr: 0.00080
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [22/100], Step [0/50], Losses: recipe_loss: 1.5896, loss: 1.5896, perplexity: 5.4056, Time: 3.1506
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [22/100], Step [10/50], Losses: recipe_loss: 1.4520, loss: 1.4520, perplexity: 4.8546, Time: 21.3467
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [22/100], Step [20/50], Losses: recipe_loss: 1.4133, loss: 1.4133, perplexity: 4.7733, Time: 16.0742
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [22/100], Step [30/50], Losses: recipe_loss: 1.4158, loss: 1.4158, perplexity: 4.7135, Time: 16.2012
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [22/100], Step [40/50], Losses: recipe_loss: 1.4144, loss: 1.4144, perplexity: 4.6863, Time: 16.0598
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [22/100], Step [0/5], Losses: recipe_loss: 3.9963, loss: 3.9963, perplexity: 121.9999, Time: 2.6503
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 23. lr: 0.00079
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [23/100], Step [0/50], Losses: recipe_loss: 1.3009, loss: 1.3009, perplexity: 4.2324, Time: 3.0224
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [23/100], Step [10/50], Losses: recipe_loss: 1.4311, loss: 1.4311, perplexity: 4.8041, Time: 16.2791
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [23/100], Step [20/50], Losses: recipe_loss: 1.4388, loss: 1.4388, perplexity: 4.7459, Time: 16.7403
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [23/100], Step [30/50], Losses: recipe_loss: 1.3944, loss: 1.3944, perplexity: 4.6062, Time: 16.0390
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [23/100], Step [40/50], Losses: recipe_loss: 1.4007, loss: 1.4007, perplexity: 4.6587, Time: 23.8244
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [23/100], Step [0/5], Losses: recipe_loss: 4.0107, loss: 4.0107, perplexity: 126.6969, Time: 2.6930
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 24. lr: 0.00079
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [24/100], Step [0/50], Losses: recipe_loss: 1.4249, loss: 1.4249, perplexity: 4.8263, Time: 5.5452
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [24/100], Step [10/50], Losses: recipe_loss: 1.3966, loss: 1.3966, perplexity: 4.6252, Time: 23.8921
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [24/100], Step [20/50], Losses: recipe_loss: 1.3617, loss: 1.3617, perplexity: 4.4603, Time: 24.8660
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [24/100], Step [30/50], Losses: recipe_loss: 1.4105, loss: 1.4105, perplexity: 4.6508, Time: 17.5838
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [24/100], Step [40/50], Losses: recipe_loss: 1.3921, loss: 1.3921, perplexity: 4.5490, Time: 18.6573
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [24/100], Step [0/5], Losses: recipe_loss: 4.0197, loss: 4.0197, perplexity: 131.1775, Time: 2.9138
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 25. lr: 0.00078
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [25/100], Step [0/50], Losses: recipe_loss: 1.3996, loss: 1.3996, perplexity: 4.4913, Time: 3.0193
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [25/100], Step [10/50], Losses: recipe_loss: 1.4110, loss: 1.4110, perplexity: 4.6737, Time: 18.4773
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [25/100], Step [20/50], Losses: recipe_loss: 1.3386, loss: 1.3386, perplexity: 4.3371, Time: 18.3340
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [25/100], Step [30/50], Losses: recipe_loss: 1.3835, loss: 1.3835, perplexity: 4.5519, Time: 16.0679
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [25/100], Step [40/50], Losses: recipe_loss: 1.4005, loss: 1.4005, perplexity: 4.5973, Time: 16.1690
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [25/100], Step [0/5], Losses: recipe_loss: 4.0339, loss: 4.0339, perplexity: 132.3294, Time: 2.3092
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 26. lr: 0.00077
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [26/100], Step [0/50], Losses: recipe_loss: 1.4188, loss: 1.4188, perplexity: 4.5611, Time: 3.2577
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [26/100], Step [10/50], Losses: recipe_loss: 1.3893, loss: 1.3893, perplexity: 4.5771, Time: 20.8814
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [26/100], Step [20/50], Losses: recipe_loss: 1.3510, loss: 1.3510, perplexity: 4.4042, Time: 20.4394
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [26/100], Step [30/50], Losses: recipe_loss: 1.3809, loss: 1.3809, perplexity: 4.5119, Time: 16.0798
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [26/100], Step [40/50], Losses: recipe_loss: 1.3873, loss: 1.3873, perplexity: 4.5826, Time: 16.0787
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [26/100], Step [0/5], Losses: recipe_loss: 4.0234, loss: 4.0234, perplexity: 131.7507, Time: 3.0114
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 27. lr: 0.00076
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [27/100], Step [0/50], Losses: recipe_loss: 1.3919, loss: 1.3919, perplexity: 4.4117, Time: 4.4096
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [27/100], Step [10/50], Losses: recipe_loss: 1.3806, loss: 1.3806, perplexity: 4.5291, Time: 17.6404
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [27/100], Step [20/50], Losses: recipe_loss: 1.3643, loss: 1.3643, perplexity: 4.4221, Time: 19.8042
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [27/100], Step [30/50], Losses: recipe_loss: 1.3827, loss: 1.3827, perplexity: 4.5652, Time: 16.1329
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [27/100], Step [40/50], Losses: recipe_loss: 1.3426, loss: 1.3426, perplexity: 4.3352, Time: 16.0506
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [27/100], Step [0/5], Losses: recipe_loss: 4.0274, loss: 4.0274, perplexity: 131.7447, Time: 2.5241
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 28. lr: 0.00075
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [28/100], Step [0/50], Losses: recipe_loss: 1.2728, loss: 1.2728, perplexity: 4.0889, Time: 2.9995
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [28/100], Step [10/50], Losses: recipe_loss: 1.3615, loss: 1.3615, perplexity: 4.4431, Time: 16.1871
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [28/100], Step [20/50], Losses: recipe_loss: 1.3743, loss: 1.3743, perplexity: 4.4791, Time: 16.0867
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [28/100], Step [30/50], Losses: recipe_loss: 1.3545, loss: 1.3545, perplexity: 4.4727, Time: 16.2517
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [28/100], Step [40/50], Losses: recipe_loss: 1.3483, loss: 1.3483, perplexity: 4.3554, Time: 16.0658
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [28/100], Step [0/5], Losses: recipe_loss: 4.0339, loss: 4.0339, perplexity: 135.0893, Time: 3.0184
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 29. lr: 0.00075
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [29/100], Step [0/50], Losses: recipe_loss: 1.4080, loss: 1.4080, perplexity: 4.5146, Time: 5.0937
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [29/100], Step [10/50], Losses: recipe_loss: 1.3660, loss: 1.3660, perplexity: 4.5036, Time: 16.6770
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [29/100], Step [20/50], Losses: recipe_loss: 1.3498, loss: 1.3498, perplexity: 4.3412, Time: 20.6377
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [29/100], Step [30/50], Losses: recipe_loss: 1.3393, loss: 1.3393, perplexity: 4.3833, Time: 16.4732
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [29/100], Step [40/50], Losses: recipe_loss: 1.3642, loss: 1.3642, perplexity: 4.4089, Time: 16.2504
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [29/100], Step [0/5], Losses: recipe_loss: 4.0331, loss: 4.0331, perplexity: 134.4208, Time: 3.1674
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 30. lr: 0.00074
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [30/100], Step [0/50], Losses: recipe_loss: 1.4135, loss: 1.4135, perplexity: 4.5298, Time: 2.9980
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [30/100], Step [10/50], Losses: recipe_loss: 1.3576, loss: 1.3576, perplexity: 4.4556, Time: 18.1344
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [30/100], Step [20/50], Losses: recipe_loss: 1.3459, loss: 1.3459, perplexity: 4.3511, Time: 16.1612
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [30/100], Step [30/50], Losses: recipe_loss: 1.3433, loss: 1.3433, perplexity: 4.3425, Time: 21.5812
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [30/100], Step [40/50], Losses: recipe_loss: 1.3698, loss: 1.3698, perplexity: 4.4580, Time: 18.7394
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [30/100], Step [0/5], Losses: recipe_loss: 4.0413, loss: 4.0413, perplexity: 136.9271, Time: 2.5439
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 31. lr: 0.00073
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [31/100], Step [0/50], Losses: recipe_loss: 1.3987, loss: 1.3987, perplexity: 4.5658, Time: 3.7532
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [31/100], Step [10/50], Losses: recipe_loss: 1.3428, loss: 1.3428, perplexity: 4.3506, Time: 17.9458
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [31/100], Step [20/50], Losses: recipe_loss: 1.3805, loss: 1.3805, perplexity: 4.5331, Time: 17.6047
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [31/100], Step [30/50], Losses: recipe_loss: 1.3871, loss: 1.3871, perplexity: 4.5252, Time: 18.7666
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [31/100], Step [40/50], Losses: recipe_loss: 1.3404, loss: 1.3404, perplexity: 4.3492, Time: 17.4857
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [31/100], Step [0/5], Losses: recipe_loss: 4.0420, loss: 4.0420, perplexity: 136.3803, Time: 3.3446
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 32. lr: 0.00072
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [32/100], Step [0/50], Losses: recipe_loss: 1.4398, loss: 1.4398, perplexity: 4.6474, Time: 4.4084
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [32/100], Step [10/50], Losses: recipe_loss: 1.3493, loss: 1.3493, perplexity: 4.3853, Time: 20.1955
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [32/100], Step [20/50], Losses: recipe_loss: 1.3606, loss: 1.3606, perplexity: 4.4545, Time: 21.0647
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [32/100], Step [30/50], Losses: recipe_loss: 1.3390, loss: 1.3390, perplexity: 4.3094, Time: 22.7981
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [32/100], Step [40/50], Losses: recipe_loss: 1.3790, loss: 1.3790, perplexity: 4.4943, Time: 23.2905
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [32/100], Step [0/5], Losses: recipe_loss: 4.0449, loss: 4.0449, perplexity: 136.8601, Time: 2.3600
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 33. lr: 0.00072
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [33/100], Step [0/50], Losses: recipe_loss: 1.2243, loss: 1.2243, perplexity: 3.7054, Time: 4.4604
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [33/100], Step [10/50], Losses: recipe_loss: 1.3640, loss: 1.3640, perplexity: 4.4133, Time: 19.0185
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [33/100], Step [20/50], Losses: recipe_loss: 1.3485, loss: 1.3485, perplexity: 4.4075, Time: 20.9536
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [33/100], Step [30/50], Losses: recipe_loss: 1.3108, loss: 1.3108, perplexity: 4.2427, Time: 17.2791
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [33/100], Step [40/50], Losses: recipe_loss: 1.3430, loss: 1.3430, perplexity: 4.3710, Time: 16.0642
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [33/100], Step [0/5], Losses: recipe_loss: 4.0491, loss: 4.0491, perplexity: 139.4933, Time: 2.6518
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 34. lr: 0.00071
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [34/100], Step [0/50], Losses: recipe_loss: 1.3911, loss: 1.3911, perplexity: 4.4588, Time: 4.4429
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [34/100], Step [10/50], Losses: recipe_loss: 1.3726, loss: 1.3726, perplexity: 4.4619, Time: 22.7862
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [34/100], Step [20/50], Losses: recipe_loss: 1.3399, loss: 1.3399, perplexity: 4.3097, Time: 24.2256
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [34/100], Step [30/50], Losses: recipe_loss: 1.3609, loss: 1.3609, perplexity: 4.4185, Time: 16.4054
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [34/100], Step [40/50], Losses: recipe_loss: 1.3487, loss: 1.3487, perplexity: 4.4219, Time: 16.2251
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [34/100], Step [0/5], Losses: recipe_loss: 4.0422, loss: 4.0422, perplexity: 136.9612, Time: 2.5909
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 35. lr: 0.00070
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [35/100], Step [0/50], Losses: recipe_loss: 1.3692, loss: 1.3692, perplexity: 4.3352, Time: 3.4961
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [35/100], Step [10/50], Losses: recipe_loss: 1.3281, loss: 1.3281, perplexity: 4.3286, Time: 17.3598
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [35/100], Step [20/50], Losses: recipe_loss: 1.3685, loss: 1.3685, perplexity: 4.4083, Time: 16.2454
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [35/100], Step [30/50], Losses: recipe_loss: 1.3387, loss: 1.3387, perplexity: 4.3902, Time: 18.6941
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [35/100], Step [40/50], Losses: recipe_loss: 1.3635, loss: 1.3635, perplexity: 4.4143, Time: 16.6479
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [35/100], Step [0/5], Losses: recipe_loss: 4.0425, loss: 4.0425, perplexity: 136.5693, Time: 3.3378
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 36. lr: 0.00070
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [36/100], Step [0/50], Losses: recipe_loss: 1.4860, loss: 1.4860, perplexity: 4.8950, Time: 4.7997
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [36/100], Step [10/50], Losses: recipe_loss: 1.3635, loss: 1.3635, perplexity: 4.4276, Time: 17.0125
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [36/100], Step [20/50], Losses: recipe_loss: 1.3280, loss: 1.3280, perplexity: 4.2669, Time: 16.1998
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [36/100], Step [30/50], Losses: recipe_loss: 1.3445, loss: 1.3445, perplexity: 4.3922, Time: 19.0883
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [36/100], Step [40/50], Losses: recipe_loss: 1.3445, loss: 1.3445, perplexity: 4.3311, Time: 16.6124
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [36/100], Step [0/5], Losses: recipe_loss: 4.0403, loss: 4.0403, perplexity: 135.7416, Time: 3.5699
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 37. lr: 0.00069
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [37/100], Step [0/50], Losses: recipe_loss: 1.2039, loss: 1.2039, perplexity: 3.8462, Time: 4.1091
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [37/100], Step [10/50], Losses: recipe_loss: 1.3498, loss: 1.3498, perplexity: 4.4439, Time: 25.1071
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [37/100], Step [20/50], Losses: recipe_loss: 1.3717, loss: 1.3717, perplexity: 4.4161, Time: 29.2634
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [37/100], Step [30/50], Losses: recipe_loss: 1.3172, loss: 1.3172, perplexity: 4.2569, Time: 22.6416
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [37/100], Step [40/50], Losses: recipe_loss: 1.3688, loss: 1.3688, perplexity: 4.4968, Time: 22.3478
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [37/100], Step [0/5], Losses: recipe_loss: 4.0440, loss: 4.0440, perplexity: 137.3837, Time: 3.3582
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 38. lr: 0.00068
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [38/100], Step [0/50], Losses: recipe_loss: 1.3799, loss: 1.3799, perplexity: 4.4057, Time: 6.1724
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [38/100], Step [10/50], Losses: recipe_loss: 1.3428, loss: 1.3428, perplexity: 4.3457, Time: 17.0688
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [38/100], Step [20/50], Losses: recipe_loss: 1.3765, loss: 1.3765, perplexity: 4.4983, Time: 16.1993
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [38/100], Step [30/50], Losses: recipe_loss: 1.3686, loss: 1.3686, perplexity: 4.4608, Time: 16.0578
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [38/100], Step [40/50], Losses: recipe_loss: 1.2996, loss: 1.2996, perplexity: 4.1832, Time: 17.7961
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [38/100], Step [0/5], Losses: recipe_loss: 4.0422, loss: 4.0422, perplexity: 137.2183, Time: 2.6028
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 39. lr: 0.00068
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [39/100], Step [0/50], Losses: recipe_loss: 1.3351, loss: 1.3351, perplexity: 4.2459, Time: 6.0078
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [39/100], Step [10/50], Losses: recipe_loss: 1.3924, loss: 1.3924, perplexity: 4.6010, Time: 28.2088
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [39/100], Step [20/50], Losses: recipe_loss: 1.3146, loss: 1.3146, perplexity: 4.2243, Time: 19.2965
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [39/100], Step [30/50], Losses: recipe_loss: 1.3424, loss: 1.3424, perplexity: 4.3057, Time: 16.1358
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [39/100], Step [40/50], Losses: recipe_loss: 1.3577, loss: 1.3577, perplexity: 4.4535, Time: 17.4697
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [39/100], Step [0/5], Losses: recipe_loss: 4.0413, loss: 4.0413, perplexity: 135.6580, Time: 2.8432
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 40. lr: 0.00067
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [40/100], Step [0/50], Losses: recipe_loss: 1.1850, loss: 1.1850, perplexity: 3.7303, Time: 3.4497
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [40/100], Step [10/50], Losses: recipe_loss: 1.3347, loss: 1.3347, perplexity: 4.3146, Time: 19.2748
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [40/100], Step [20/50], Losses: recipe_loss: 1.3475, loss: 1.3475, perplexity: 4.3876, Time: 17.6861
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [40/100], Step [30/50], Losses: recipe_loss: 1.3917, loss: 1.3917, perplexity: 4.5235, Time: 16.2008
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [40/100], Step [40/50], Losses: recipe_loss: 1.3210, loss: 1.3210, perplexity: 4.2465, Time: 16.8427
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [40/100], Step [0/5], Losses: recipe_loss: 4.0468, loss: 4.0468, perplexity: 138.5256, Time: 2.5347
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 41. lr: 0.00066
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [41/100], Step [0/50], Losses: recipe_loss: 1.4696, loss: 1.4696, perplexity: 4.7807, Time: 2.6431
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [41/100], Step [10/50], Losses: recipe_loss: 1.3452, loss: 1.3452, perplexity: 4.4072, Time: 21.4472
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [41/100], Step [20/50], Losses: recipe_loss: 1.3430, loss: 1.3430, perplexity: 4.3265, Time: 16.5870
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [41/100], Step [30/50], Losses: recipe_loss: 1.3680, loss: 1.3680, perplexity: 4.4788, Time: 16.1407
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [41/100], Step [40/50], Losses: recipe_loss: 1.3292, loss: 1.3292, perplexity: 4.2967, Time: 16.0583
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [41/100], Step [0/5], Losses: recipe_loss: 4.0419, loss: 4.0419, perplexity: 135.9187, Time: 2.8363
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 42. lr: 0.00066
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [42/100], Step [0/50], Losses: recipe_loss: 1.3344, loss: 1.3344, perplexity: 4.4364, Time: 4.1705
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [42/100], Step [10/50], Losses: recipe_loss: 1.3413, loss: 1.3413, perplexity: 4.3766, Time: 18.2304
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [42/100], Step [20/50], Losses: recipe_loss: 1.3634, loss: 1.3634, perplexity: 4.4262, Time: 16.2199
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [42/100], Step [30/50], Losses: recipe_loss: 1.3639, loss: 1.3639, perplexity: 4.4423, Time: 22.6232
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [42/100], Step [40/50], Losses: recipe_loss: 1.3400, loss: 1.3400, perplexity: 4.3242, Time: 17.2883
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [42/100], Step [0/5], Losses: recipe_loss: 4.0440, loss: 4.0440, perplexity: 137.5453, Time: 3.3620
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 43. lr: 0.00065
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [43/100], Step [0/50], Losses: recipe_loss: 1.3026, loss: 1.3026, perplexity: 4.1362, Time: 4.0370
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [43/100], Step [10/50], Losses: recipe_loss: 1.3820, loss: 1.3820, perplexity: 4.5029, Time: 16.6826
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [43/100], Step [20/50], Losses: recipe_loss: 1.3514, loss: 1.3514, perplexity: 4.3824, Time: 16.2277
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [43/100], Step [30/50], Losses: recipe_loss: 1.3617, loss: 1.3617, perplexity: 4.4331, Time: 18.0060
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [43/100], Step [40/50], Losses: recipe_loss: 1.3228, loss: 1.3228, perplexity: 4.2655, Time: 17.5267
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [43/100], Step [0/5], Losses: recipe_loss: 4.0366, loss: 4.0366, perplexity: 134.5815, Time: 3.1960
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 44. lr: 0.00064
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [44/100], Step [0/50], Losses: recipe_loss: 1.3932, loss: 1.3932, perplexity: 4.6329, Time: 3.6446
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [44/100], Step [10/50], Losses: recipe_loss: 1.3795, loss: 1.3795, perplexity: 4.4821, Time: 23.2296
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [44/100], Step [20/50], Losses: recipe_loss: 1.3558, loss: 1.3558, perplexity: 4.3809, Time: 17.0140
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [44/100], Step [30/50], Losses: recipe_loss: 1.3101, loss: 1.3101, perplexity: 4.2445, Time: 17.1187
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [44/100], Step [40/50], Losses: recipe_loss: 1.3433, loss: 1.3433, perplexity: 4.3733, Time: 19.0871
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [44/100], Step [0/5], Losses: recipe_loss: 4.0442, loss: 4.0442, perplexity: 136.7027, Time: 2.5280
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 45. lr: 0.00064
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [45/100], Step [0/50], Losses: recipe_loss: 1.3024, loss: 1.3024, perplexity: 4.1199, Time: 3.5309
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [45/100], Step [10/50], Losses: recipe_loss: 1.3018, loss: 1.3018, perplexity: 4.1723, Time: 17.0743
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [45/100], Step [20/50], Losses: recipe_loss: 1.3602, loss: 1.3602, perplexity: 4.4314, Time: 22.5463
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [45/100], Step [30/50], Losses: recipe_loss: 1.3458, loss: 1.3458, perplexity: 4.3964, Time: 16.0952
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [45/100], Step [40/50], Losses: recipe_loss: 1.3512, loss: 1.3512, perplexity: 4.3873, Time: 16.2139
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [45/100], Step [0/5], Losses: recipe_loss: 4.0481, loss: 4.0481, perplexity: 138.9240, Time: 2.6328
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 46. lr: 0.00063
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [46/100], Step [0/50], Losses: recipe_loss: 1.3023, loss: 1.3023, perplexity: 3.9496, Time: 3.7428
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [46/100], Step [10/50], Losses: recipe_loss: 1.3006, loss: 1.3006, perplexity: 4.1990, Time: 19.8461
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [46/100], Step [20/50], Losses: recipe_loss: 1.4157, loss: 1.4157, perplexity: 4.6626, Time: 16.3144
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [46/100], Step [30/50], Losses: recipe_loss: 1.3464, loss: 1.3464, perplexity: 4.3402, Time: 16.0449
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [46/100], Step [40/50], Losses: recipe_loss: 1.3557, loss: 1.3557, perplexity: 4.3678, Time: 16.0732
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [46/100], Step [0/5], Losses: recipe_loss: 4.0444, loss: 4.0444, perplexity: 136.6110, Time: 2.6507
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 47. lr: 0.00062
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [47/100], Step [0/50], Losses: recipe_loss: 1.2849, loss: 1.2849, perplexity: 4.1511, Time: 2.8165
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [47/100], Step [10/50], Losses: recipe_loss: 1.3610, loss: 1.3610, perplexity: 4.4070, Time: 16.2124
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [47/100], Step [20/50], Losses: recipe_loss: 1.3234, loss: 1.3234, perplexity: 4.3038, Time: 16.0950
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [47/100], Step [30/50], Losses: recipe_loss: 1.3817, loss: 1.3817, perplexity: 4.5160, Time: 20.1689
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [47/100], Step [40/50], Losses: recipe_loss: 1.3658, loss: 1.3658, perplexity: 4.4107, Time: 17.8500
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [47/100], Step [0/5], Losses: recipe_loss: 4.0444, loss: 4.0444, perplexity: 136.9516, Time: 3.2307
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 48. lr: 0.00062
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [48/100], Step [0/50], Losses: recipe_loss: 1.4725, loss: 1.4725, perplexity: 4.7254, Time: 3.4217
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [48/100], Step [10/50], Losses: recipe_loss: 1.3123, loss: 1.3123, perplexity: 4.2040, Time: 16.2092
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [48/100], Step [20/50], Losses: recipe_loss: 1.3379, loss: 1.3379, perplexity: 4.3542, Time: 16.0534
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [48/100], Step [30/50], Losses: recipe_loss: 1.3787, loss: 1.3787, perplexity: 4.5104, Time: 16.1933
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [48/100], Step [40/50], Losses: recipe_loss: 1.3473, loss: 1.3473, perplexity: 4.3920, Time: 20.0118
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [48/100], Step [0/5], Losses: recipe_loss: 4.0428, loss: 4.0428, perplexity: 136.2737, Time: 3.3799
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 49. lr: 0.00061
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [49/100], Step [0/50], Losses: recipe_loss: 1.2923, loss: 1.2923, perplexity: 4.0713, Time: 3.8121
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [49/100], Step [10/50], Losses: recipe_loss: 1.3367, loss: 1.3367, perplexity: 4.3004, Time: 17.6184
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [49/100], Step [20/50], Losses: recipe_loss: 1.3358, loss: 1.3358, perplexity: 4.3440, Time: 18.0982
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [49/100], Step [30/50], Losses: recipe_loss: 1.3512, loss: 1.3512, perplexity: 4.4146, Time: 16.0559
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [49/100], Step [40/50], Losses: recipe_loss: 1.3881, loss: 1.3881, perplexity: 4.5177, Time: 16.1999
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [49/100], Step [0/5], Losses: recipe_loss: 4.0449, loss: 4.0449, perplexity: 136.5310, Time: 3.6666
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 50. lr: 0.00061
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [50/100], Step [0/50], Losses: recipe_loss: 1.4554, loss: 1.4554, perplexity: 4.7124, Time: 4.0059
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [50/100], Step [10/50], Losses: recipe_loss: 1.3694, loss: 1.3694, perplexity: 4.4195, Time: 23.9109
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [50/100], Step [20/50], Losses: recipe_loss: 1.3558, loss: 1.3558, perplexity: 4.3995, Time: 17.2695
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [50/100], Step [30/50], Losses: recipe_loss: 1.3565, loss: 1.3565, perplexity: 4.4696, Time: 16.0813
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [50/100], Step [40/50], Losses: recipe_loss: 1.2914, loss: 1.2914, perplexity: 4.1287, Time: 17.6831
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [50/100], Step [0/5], Losses: recipe_loss: 4.0458, loss: 4.0458, perplexity: 138.0477, Time: 3.5428
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 51. lr: 0.00060
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [51/100], Step [0/50], Losses: recipe_loss: 1.2669, loss: 1.2669, perplexity: 4.1698, Time: 3.0566
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [51/100], Step [10/50], Losses: recipe_loss: 1.3631, loss: 1.3631, perplexity: 4.4557, Time: 18.5656
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [51/100], Step [20/50], Losses: recipe_loss: 1.3560, loss: 1.3560, perplexity: 4.3846, Time: 17.2357
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [51/100], Step [30/50], Losses: recipe_loss: 1.3283, loss: 1.3283, perplexity: 4.3218, Time: 19.0741
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [51/100], Step [40/50], Losses: recipe_loss: 1.3649, loss: 1.3649, perplexity: 4.4152, Time: 22.0263
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [51/100], Step [0/5], Losses: recipe_loss: 4.0458, loss: 4.0458, perplexity: 138.2703, Time: 2.6674
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 52. lr: 0.00059
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [52/100], Step [0/50], Losses: recipe_loss: 1.3754, loss: 1.3754, perplexity: 4.5599, Time: 4.9059
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [52/100], Step [10/50], Losses: recipe_loss: 1.3032, loss: 1.3032, perplexity: 4.1892, Time: 16.0364
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [52/100], Step [20/50], Losses: recipe_loss: 1.3727, loss: 1.3727, perplexity: 4.4889, Time: 17.1586
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [52/100], Step [30/50], Losses: recipe_loss: 1.3638, loss: 1.3638, perplexity: 4.4097, Time: 16.2086
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [52/100], Step [40/50], Losses: recipe_loss: 1.3220, loss: 1.3220, perplexity: 4.3045, Time: 16.0524
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [52/100], Step [0/5], Losses: recipe_loss: 4.0378, loss: 4.0378, perplexity: 135.0011, Time: 2.4039
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 53. lr: 0.00059
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [53/100], Step [0/50], Losses: recipe_loss: 1.4335, loss: 1.4335, perplexity: 4.8217, Time: 3.4302
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [53/100], Step [10/50], Losses: recipe_loss: 1.3681, loss: 1.3681, perplexity: 4.4271, Time: 16.3182
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [53/100], Step [20/50], Losses: recipe_loss: 1.3158, loss: 1.3158, perplexity: 4.2031, Time: 16.0494
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [53/100], Step [30/50], Losses: recipe_loss: 1.3592, loss: 1.3592, perplexity: 4.4476, Time: 16.8498
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [53/100], Step [40/50], Losses: recipe_loss: 1.3347, loss: 1.3347, perplexity: 4.3473, Time: 16.8108
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [53/100], Step [0/5], Losses: recipe_loss: 4.0427, loss: 4.0427, perplexity: 136.2474, Time: 3.4203
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 54. lr: 0.00058
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [54/100], Step [0/50], Losses: recipe_loss: 1.4918, loss: 1.4918, perplexity: 4.9035, Time: 3.2676
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [54/100], Step [10/50], Losses: recipe_loss: 1.3528, loss: 1.3528, perplexity: 4.4338, Time: 16.1996
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [54/100], Step [20/50], Losses: recipe_loss: 1.3904, loss: 1.3904, perplexity: 4.4983, Time: 16.1533
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [54/100], Step [30/50], Losses: recipe_loss: 1.3174, loss: 1.3174, perplexity: 4.2820, Time: 20.2388
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [54/100], Step [40/50], Losses: recipe_loss: 1.3629, loss: 1.3629, perplexity: 4.3768, Time: 24.3209
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [54/100], Step [0/5], Losses: recipe_loss: 4.0419, loss: 4.0419, perplexity: 135.2270, Time: 3.3338
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 55. lr: 0.00058
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [55/100], Step [0/50], Losses: recipe_loss: 1.2222, loss: 1.2222, perplexity: 3.8604, Time: 3.8658
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [55/100], Step [10/50], Losses: recipe_loss: 1.3360, loss: 1.3360, perplexity: 4.3134, Time: 17.4981
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [55/100], Step [20/50], Losses: recipe_loss: 1.3473, loss: 1.3473, perplexity: 4.4175, Time: 17.4215
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [55/100], Step [30/50], Losses: recipe_loss: 1.3470, loss: 1.3470, perplexity: 4.3991, Time: 16.9705
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [55/100], Step [40/50], Losses: recipe_loss: 1.3398, loss: 1.3398, perplexity: 4.3233, Time: 17.1895
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [55/100], Step [0/5], Losses: recipe_loss: 4.0452, loss: 4.0452, perplexity: 137.0768, Time: 2.5039
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 56. lr: 0.00057
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [56/100], Step [0/50], Losses: recipe_loss: 1.4074, loss: 1.4074, perplexity: 4.5887, Time: 4.7861
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [56/100], Step [10/50], Losses: recipe_loss: 1.3284, loss: 1.3284, perplexity: 4.3112, Time: 16.2178
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [56/100], Step [20/50], Losses: recipe_loss: 1.3294, loss: 1.3294, perplexity: 4.3017, Time: 17.3960
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [56/100], Step [30/50], Losses: recipe_loss: 1.3463, loss: 1.3463, perplexity: 4.3774, Time: 16.2339
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [56/100], Step [40/50], Losses: recipe_loss: 1.3693, loss: 1.3693, perplexity: 4.4366, Time: 16.0106
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [56/100], Step [0/5], Losses: recipe_loss: 4.0445, loss: 4.0445, perplexity: 136.6673, Time: 2.6141
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 57. lr: 0.00056
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [57/100], Step [0/50], Losses: recipe_loss: 1.3415, loss: 1.3415, perplexity: 4.3180, Time: 3.2651
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [57/100], Step [10/50], Losses: recipe_loss: 1.3080, loss: 1.3080, perplexity: 4.2483, Time: 17.6658
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [57/100], Step [20/50], Losses: recipe_loss: 1.3685, loss: 1.3685, perplexity: 4.4894, Time: 16.0795
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [57/100], Step [30/50], Losses: recipe_loss: 1.3337, loss: 1.3337, perplexity: 4.3030, Time: 19.3346
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [57/100], Step [40/50], Losses: recipe_loss: 1.3726, loss: 1.3726, perplexity: 4.4737, Time: 19.7086
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [57/100], Step [0/5], Losses: recipe_loss: 4.0487, loss: 4.0487, perplexity: 139.1028, Time: 2.7913
+loaded data
+loaded data
+loaded data
+loaded data
+logger being reset
+Epoch 58. lr: 0.00056
+model trained
+50
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [58/100], Step [0/50], Losses: recipe_loss: 1.2861, loss: 1.2861, perplexity: 4.1751, Time: 4.9852
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [58/100], Step [10/50], Losses: recipe_loss: 1.3285, loss: 1.3285, perplexity: 4.2764, Time: 20.2947
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [58/100], Step [20/50], Losses: recipe_loss: 1.3064, loss: 1.3064, perplexity: 4.2067, Time: 21.7614
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [58/100], Step [30/50], Losses: recipe_loss: 1.3352, loss: 1.3352, perplexity: 4.3486, Time: 23.1111
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [58/100], Step [40/50], Losses: recipe_loss: 1.4002, loss: 1.4002, perplexity: 4.5832, Time: 16.8486
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+5
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [58/100], Step [0/5], Losses: recipe_loss: 4.0457, loss: 4.0457, perplexity: 137.4201, Time: 3.3521
+loaded data
+loaded data
+loaded data
+loaded data
+logger closing

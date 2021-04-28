@@ -1,0 +1,2856 @@
+Namespace(aux_data_dir='../data', batch_size=75, beam=-1, crop_size=224, decay_lr=True, dropout_decoder_i=0.3, dropout_decoder_r=0.3, dropout_encoder=0.3, embed_size=512, es_metric='iou_sample', eval_split='val', finetune_after=0, get_perplexity=False, greedy=False, image_model='resnet50', image_size=256, ingrs_only=True, label_smoothing_ingr=0.1, learning_rate=0.0001, log_step=10, log_term=False, loss_weight=[0.0, 1000.0, 1.0, 1.0], lr_decay_every=1, lr_decay_rate=0.99, max_eval=200, maxnumims=5, maxnuminstrs=10, maxnumlabels=20, maxseqlen=15, model_name='im2ingr', n_att=8, n_att_ingrs=4, num_epochs=100, num_workers=1, numgens=3, patience=50, project_name='inversecooking', recipe1m_dir='/scratch/ntallapr/inversecooking/data', recipe_only=False, resume=False, save_dir='/scratch/ntallapr/inversecooking/test1', scale_learning_rate_cnn=1.0, suff='', temperature=1.0, tensorboard=True, transf_layers=16, transf_layers_ingrs=4, transfer_from='', use_lmdb=False, use_true_ingrs=False, weight_decay=0.0)
+for split
+split is train
+<torch.utils.data.dataloader.DataLoader object at 0x2b5d254014a8>
+for split
+<torch.utils.data.dataloader.DataLoader object at 0x2b5d2d6941d0>
+CNN params: 23508032
+decoder params: 13099471
+Fine tuning resnet
+device is gpu
+model to devide and benchmarking starting
+benchmarking done
+starting the training
+logger being reset
+Epoch 0. lr: 0.00010
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [0/100], Step [0/26], Losses: ingr_loss: 0.0360, eos_loss: 3.8289, loss: 50.3092, iou: 0.0013, card_penalty: 10.4709, Time: 25.6206
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [0/100], Step [10/26], Losses: ingr_loss: 0.0302, eos_loss: 1.7252, loss: 41.6858, iou: 0.0140, card_penalty: 9.7117, Time: 33.6156
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [0/100], Step [20/26], Losses: ingr_loss: 0.0268, eos_loss: 1.3973, loss: 37.4956, iou: 0.0755, card_penalty: 9.2968, Time: 33.7981
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [0/100], Step [0/2], Losses: ingr_loss: 0.0244, eos_loss: 1.1805, loss: 33.8399, iou: 0.0577, iou_sample: 0.1311, card_penalty: 8.2273, Time: 5.4894
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 1. lr: 0.00010
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [1/100], Step [0/26], Losses: ingr_loss: 0.0253, eos_loss: 1.2860, loss: 35.8356, iou: 0.1195, card_penalty: 9.2772, Time: 6.2782
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [1/100], Step [10/26], Losses: ingr_loss: 0.0246, eos_loss: 1.3159, loss: 35.3226, iou: 0.1448, card_penalty: 9.3898, Time: 35.0906
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [1/100], Step [20/26], Losses: ingr_loss: 0.0240, eos_loss: 1.2634, loss: 34.5282, iou: 0.1452, card_penalty: 9.2887, Time: 34.1737
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [1/100], Step [0/2], Losses: ingr_loss: 0.0219, eos_loss: 1.0549, loss: 31.1643, iou: 0.1563, iou_sample: 0.1987, card_penalty: 8.1983, Time: 4.8008
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 2. lr: 0.00010
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [2/100], Step [0/26], Losses: ingr_loss: 0.0221, eos_loss: 1.1984, loss: 32.1326, iou: 0.1589, card_penalty: 8.8370, Time: 6.7957
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [2/100], Step [10/26], Losses: ingr_loss: 0.0228, eos_loss: 1.2625, loss: 33.2517, iou: 0.1813, card_penalty: 9.2196, Time: 36.1843
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [2/100], Step [20/26], Losses: ingr_loss: 0.0220, eos_loss: 1.2170, loss: 32.2702, iou: 0.1909, card_penalty: 9.0622, Time: 41.4015
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [2/100], Step [0/2], Losses: ingr_loss: 0.0208, eos_loss: 1.0899, loss: 30.1873, iou: 0.1987, iou_sample: 0.2451, card_penalty: 8.2662, Time: 5.0024
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 3. lr: 0.00010
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [3/100], Step [0/26], Losses: ingr_loss: 0.0210, eos_loss: 1.2883, loss: 31.2844, iou: 0.2283, card_penalty: 8.9508, Time: 7.1228
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [3/100], Step [10/26], Losses: ingr_loss: 0.0214, eos_loss: 1.2122, loss: 31.7021, iou: 0.2024, card_penalty: 9.0433, Time: 36.6407
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [3/100], Step [20/26], Losses: ingr_loss: 0.0215, eos_loss: 1.2290, loss: 31.7353, iou: 0.2083, card_penalty: 9.0386, Time: 35.9130
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [3/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.9743, loss: 29.4806, iou: 0.2149, iou_sample: 0.2665, card_penalty: 8.0865, Time: 5.5169
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 4. lr: 0.00010
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [4/100], Step [0/26], Losses: ingr_loss: 0.0219, eos_loss: 1.1598, loss: 32.3460, iou: 0.2070, card_penalty: 9.2396, Time: 6.7454
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [4/100], Step [10/26], Losses: ingr_loss: 0.0208, eos_loss: 1.2114, loss: 30.9010, iou: 0.2172, card_penalty: 8.8974, Time: 30.7843
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [4/100], Step [20/26], Losses: ingr_loss: 0.0206, eos_loss: 1.1920, loss: 30.6944, iou: 0.2220, card_penalty: 8.8605, Time: 34.3592
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [4/100], Step [0/2], Losses: ingr_loss: 0.0199, eos_loss: 1.0191, loss: 29.0661, iou: 0.2311, iou_sample: 0.2697, card_penalty: 8.1254, Time: 4.8408
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 5. lr: 0.00010
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [5/100], Step [0/26], Losses: ingr_loss: 0.0194, eos_loss: 1.2176, loss: 29.2592, iou: 0.2355, card_penalty: 8.5953, Time: 5.5206
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [5/100], Step [10/26], Losses: ingr_loss: 0.0207, eos_loss: 1.1788, loss: 30.8221, iou: 0.2294, card_penalty: 8.9575, Time: 39.8402
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [5/100], Step [20/26], Losses: ingr_loss: 0.0203, eos_loss: 1.1868, loss: 30.3961, iou: 0.2443, card_penalty: 8.8950, Time: 37.5399
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [5/100], Step [0/2], Losses: ingr_loss: 0.0202, eos_loss: 0.8251, loss: 29.2524, iou: 0.2198, iou_sample: 0.2678, card_penalty: 8.1786, Time: 5.8786
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 6. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [6/100], Step [0/26], Losses: ingr_loss: 0.0207, eos_loss: 1.1131, loss: 30.7794, iou: 0.1929, card_penalty: 9.0020, Time: 6.1676
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [6/100], Step [10/26], Losses: ingr_loss: 0.0202, eos_loss: 1.1518, loss: 30.2396, iou: 0.2421, card_penalty: 8.9089, Time: 41.2369
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [6/100], Step [20/26], Losses: ingr_loss: 0.0195, eos_loss: 1.1182, loss: 29.2630, iou: 0.2439, card_penalty: 8.6254, Time: 41.1784
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [6/100], Step [0/2], Losses: ingr_loss: 0.0198, eos_loss: 0.9787, loss: 29.0573, iou: 0.2320, iou_sample: 0.2688, card_penalty: 8.2335, Time: 5.8479
+loaded data
+logger being reset
+Epoch 7. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [7/100], Step [0/26], Losses: ingr_loss: 0.0206, eos_loss: 1.1765, loss: 30.9492, iou: 0.2433, card_penalty: 9.1522, Time: 7.9903
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [7/100], Step [10/26], Losses: ingr_loss: 0.0195, eos_loss: 1.1403, loss: 29.3172, iou: 0.2544, card_penalty: 8.6955, Time: 36.1548
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [7/100], Step [20/26], Losses: ingr_loss: 0.0196, eos_loss: 1.1331, loss: 29.5039, iou: 0.2556, card_penalty: 8.7567, Time: 50.8897
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [7/100], Step [0/2], Losses: ingr_loss: 0.0194, eos_loss: 0.9095, loss: 28.5106, iou: 0.2308, iou_sample: 0.2555, card_penalty: 8.1617, Time: 5.6166
+loaded data
+logger being reset
+Epoch 8. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [8/100], Step [0/26], Losses: ingr_loss: 0.0174, eos_loss: 1.1397, loss: 26.7100, iou: 0.2833, card_penalty: 8.1296, Time: 5.4467
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [8/100], Step [10/26], Losses: ingr_loss: 0.0193, eos_loss: 1.1230, loss: 29.1870, iou: 0.2638, card_penalty: 8.7591, Time: 38.5823
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [8/100], Step [20/26], Losses: ingr_loss: 0.0192, eos_loss: 1.1164, loss: 28.9316, iou: 0.2697, card_penalty: 8.6536, Time: 36.5313
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [8/100], Step [0/2], Losses: ingr_loss: 0.0201, eos_loss: 0.7338, loss: 29.1392, iou: 0.2422, iou_sample: 0.2646, card_penalty: 8.2725, Time: 4.8934
+loaded data
+logger being reset
+Epoch 9. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [9/100], Step [0/26], Losses: ingr_loss: 0.0181, eos_loss: 1.0090, loss: 27.4877, iou: 0.2847, card_penalty: 8.3947, Time: 7.3040
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [9/100], Step [10/26], Losses: ingr_loss: 0.0190, eos_loss: 1.1295, loss: 28.7791, iou: 0.2683, card_penalty: 8.6342, Time: 37.3502
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [9/100], Step [20/26], Losses: ingr_loss: 0.0187, eos_loss: 1.0463, loss: 28.2811, iou: 0.2677, card_penalty: 8.4921, Time: 36.0624
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [9/100], Step [0/2], Losses: ingr_loss: 0.0199, eos_loss: 0.9790, loss: 29.1342, iou: 0.2363, iou_sample: 0.2565, card_penalty: 8.2693, Time: 6.9409
+loaded data
+logger being reset
+Epoch 10. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [10/100], Step [0/26], Losses: ingr_loss: 0.0180, eos_loss: 1.1330, loss: 27.4574, iou: 0.2989, card_penalty: 8.3559, Time: 5.7130
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [10/100], Step [10/26], Losses: ingr_loss: 0.0186, eos_loss: 1.0552, loss: 28.1345, iou: 0.2794, card_penalty: 8.4875, Time: 45.9248
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [10/100], Step [20/26], Losses: ingr_loss: 0.0182, eos_loss: 1.0740, loss: 27.6625, iou: 0.2863, card_penalty: 8.3555, Time: 49.1641
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [10/100], Step [0/2], Losses: ingr_loss: 0.0198, eos_loss: 0.8650, loss: 28.8809, iou: 0.2346, iou_sample: 0.2673, card_penalty: 8.2572, Time: 6.9432
+loaded data
+logger being reset
+Epoch 11. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [11/100], Step [0/26], Losses: ingr_loss: 0.0178, eos_loss: 1.1596, loss: 27.4015, iou: 0.3078, card_penalty: 8.4364, Time: 6.8811
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [11/100], Step [10/26], Losses: ingr_loss: 0.0182, eos_loss: 1.0735, loss: 27.7348, iou: 0.2831, card_penalty: 8.4312, Time: 34.1504
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [11/100], Step [20/26], Losses: ingr_loss: 0.0178, eos_loss: 1.0607, loss: 27.1854, iou: 0.2973, card_penalty: 8.2804, Time: 40.0852
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [11/100], Step [0/2], Losses: ingr_loss: 0.0197, eos_loss: 0.7606, loss: 28.6474, iou: 0.2317, iou_sample: 0.2772, card_penalty: 8.1846, Time: 5.7480
+loaded data
+Saved checkpoint.
+logger being reset
+Epoch 12. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [12/100], Step [0/26], Losses: ingr_loss: 0.0174, eos_loss: 1.0907, loss: 26.6636, iou: 0.3133, card_penalty: 8.1415, Time: 6.1612
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [12/100], Step [10/26], Losses: ingr_loss: 0.0178, eos_loss: 1.0413, loss: 27.0537, iou: 0.2961, card_penalty: 8.2422, Time: 34.5533
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [12/100], Step [20/26], Losses: ingr_loss: 0.0181, eos_loss: 1.0322, loss: 27.5747, iou: 0.3026, card_penalty: 8.4151, Time: 46.6888
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [12/100], Step [0/2], Losses: ingr_loss: 0.0198, eos_loss: 0.7630, loss: 28.9157, iou: 0.2153, iou_sample: 0.2519, card_penalty: 8.3057, Time: 4.5807
+loaded data
+logger being reset
+Epoch 13. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [13/100], Step [0/26], Losses: ingr_loss: 0.0185, eos_loss: 1.1229, loss: 28.0476, iou: 0.3068, card_penalty: 8.4407, Time: 6.4200
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [13/100], Step [10/26], Losses: ingr_loss: 0.0179, eos_loss: 1.0479, loss: 27.3447, iou: 0.3041, card_penalty: 8.3809, Time: 38.9095
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [13/100], Step [20/26], Losses: ingr_loss: 0.0173, eos_loss: 1.0592, loss: 26.5301, iou: 0.3140, card_penalty: 8.1361, Time: 36.4313
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [13/100], Step [0/2], Losses: ingr_loss: 0.0198, eos_loss: 0.7374, loss: 28.7949, iou: 0.2265, iou_sample: 0.2629, card_penalty: 8.2344, Time: 4.9780
+loaded data
+logger being reset
+Epoch 14. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [14/100], Step [0/26], Losses: ingr_loss: 0.0168, eos_loss: 1.0380, loss: 25.6169, iou: 0.3069, card_penalty: 7.7694, Time: 6.7246
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [14/100], Step [10/26], Losses: ingr_loss: 0.0175, eos_loss: 1.0460, loss: 26.7763, iou: 0.3108, card_penalty: 8.2214, Time: 39.3957
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [14/100], Step [20/26], Losses: ingr_loss: 0.0176, eos_loss: 1.0670, loss: 26.8723, iou: 0.3121, card_penalty: 8.2236, Time: 33.9816
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [14/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7681, loss: 29.5231, iou: 0.2237, iou_sample: 0.2516, card_penalty: 8.3416, Time: 4.2557
+loaded data
+logger being reset
+Epoch 15. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [15/100], Step [0/26], Losses: ingr_loss: 0.0170, eos_loss: 1.0621, loss: 26.1493, iou: 0.3236, card_penalty: 8.0653, Time: 6.1336
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [15/100], Step [10/26], Losses: ingr_loss: 0.0172, eos_loss: 1.0916, loss: 26.3695, iou: 0.3263, card_penalty: 8.1062, Time: 41.9890
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [15/100], Step [20/26], Losses: ingr_loss: 0.0172, eos_loss: 1.0021, loss: 26.3510, iou: 0.3113, card_penalty: 8.1337, Time: 36.5587
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [15/100], Step [0/2], Losses: ingr_loss: 0.0201, eos_loss: 0.8047, loss: 29.2376, iou: 0.2294, iou_sample: 0.2434, card_penalty: 8.3395, Time: 5.6155
+loaded data
+logger being reset
+Epoch 16. lr: 0.00009
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [16/100], Step [0/26], Losses: ingr_loss: 0.0168, eos_loss: 1.0898, loss: 25.6586, iou: 0.3292, card_penalty: 7.7373, Time: 7.7519
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [16/100], Step [10/26], Losses: ingr_loss: 0.0171, eos_loss: 1.0253, loss: 26.1505, iou: 0.3240, card_penalty: 8.0417, Time: 41.9498
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [16/100], Step [20/26], Losses: ingr_loss: 0.0170, eos_loss: 1.0008, loss: 26.0857, iou: 0.3348, card_penalty: 8.0634, Time: 47.1891
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [16/100], Step [0/2], Losses: ingr_loss: 0.0200, eos_loss: 0.7839, loss: 29.0877, iou: 0.2355, iou_sample: 0.2505, card_penalty: 8.2555, Time: 6.7312
+loaded data
+logger being reset
+Epoch 17. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [17/100], Step [0/26], Losses: ingr_loss: 0.0160, eos_loss: 1.0856, loss: 24.8496, iou: 0.3497, card_penalty: 7.7231, Time: 6.9676
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [17/100], Step [10/26], Losses: ingr_loss: 0.0167, eos_loss: 1.0452, loss: 25.7358, iou: 0.3319, card_penalty: 7.9408, Time: 37.2640
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [17/100], Step [20/26], Losses: ingr_loss: 0.0172, eos_loss: 1.0048, loss: 26.2551, iou: 0.3278, card_penalty: 8.0916, Time: 50.7590
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [17/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7561, loss: 29.3835, iou: 0.2127, iou_sample: 0.2534, card_penalty: 8.3373, Time: 4.9379
+loaded data
+logger being reset
+Epoch 18. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [18/100], Step [0/26], Losses: ingr_loss: 0.0172, eos_loss: 1.0402, loss: 26.4004, iou: 0.3422, card_penalty: 8.1909, Time: 6.3556
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [18/100], Step [10/26], Losses: ingr_loss: 0.0167, eos_loss: 1.0429, loss: 25.8163, iou: 0.3402, card_penalty: 8.0558, Time: 35.2996
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [18/100], Step [20/26], Losses: ingr_loss: 0.0166, eos_loss: 1.0174, loss: 25.5486, iou: 0.3366, card_penalty: 7.9083, Time: 42.0869
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [18/100], Step [0/2], Losses: ingr_loss: 0.0202, eos_loss: 0.7365, loss: 29.2623, iou: 0.2262, iou_sample: 0.2540, card_penalty: 8.3310, Time: 4.5743
+loaded data
+logger being reset
+Epoch 19. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [19/100], Step [0/26], Losses: ingr_loss: 0.0171, eos_loss: 1.0431, loss: 26.5078, iou: 0.3538, card_penalty: 8.3424, Time: 6.4146
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [19/100], Step [10/26], Losses: ingr_loss: 0.0166, eos_loss: 1.0398, loss: 25.6008, iou: 0.3387, card_penalty: 7.9326, Time: 49.7618
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [19/100], Step [20/26], Losses: ingr_loss: 0.0169, eos_loss: 0.9700, loss: 25.8940, iou: 0.3450, card_penalty: 8.0547, Time: 43.2337
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [19/100], Step [0/2], Losses: ingr_loss: 0.0202, eos_loss: 0.7652, loss: 29.2656, iou: 0.2263, iou_sample: 0.2555, card_penalty: 8.3141, Time: 7.0609
+loaded data
+logger being reset
+Epoch 20. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [20/100], Step [0/26], Losses: ingr_loss: 0.0169, eos_loss: 1.0017, loss: 25.9259, iou: 0.3451, card_penalty: 7.9877, Time: 5.7541
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [20/100], Step [10/26], Losses: ingr_loss: 0.0170, eos_loss: 1.0409, loss: 26.0758, iou: 0.3404, card_penalty: 8.0590, Time: 36.2345
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [20/100], Step [20/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0283, loss: 25.1049, iou: 0.3541, card_penalty: 7.8253, Time: 41.5894
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [20/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7231, loss: 29.4671, iou: 0.2134, iou_sample: 0.2449, card_penalty: 8.3018, Time: 5.0049
+loaded data
+logger being reset
+Epoch 21. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [21/100], Step [0/26], Losses: ingr_loss: 0.0166, eos_loss: 0.9783, loss: 25.4963, iou: 0.3406, card_penalty: 7.9620, Time: 5.6842
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [21/100], Step [10/26], Losses: ingr_loss: 0.0168, eos_loss: 0.9876, loss: 25.7547, iou: 0.3446, card_penalty: 8.0098, Time: 39.1402
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [21/100], Step [20/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0313, loss: 25.2935, iou: 0.3484, card_penalty: 7.8681, Time: 32.7107
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [21/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7434, loss: 29.4382, iou: 0.2192, iou_sample: 0.2495, card_penalty: 8.3203, Time: 5.9474
+loaded data
+logger being reset
+Epoch 22. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [22/100], Step [0/26], Losses: ingr_loss: 0.0157, eos_loss: 1.0326, loss: 24.1156, iou: 0.3602, card_penalty: 7.4070, Time: 8.6957
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [22/100], Step [10/26], Losses: ingr_loss: 0.0167, eos_loss: 1.0057, loss: 25.6290, iou: 0.3442, card_penalty: 7.9639, Time: 36.6347
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [22/100], Step [20/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0251, loss: 25.1389, iou: 0.3453, card_penalty: 7.8428, Time: 40.9577
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [22/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7259, loss: 29.5365, iou: 0.2264, iou_sample: 0.2474, card_penalty: 8.3546, Time: 5.8905
+loaded data
+logger being reset
+Epoch 23. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [23/100], Step [0/26], Losses: ingr_loss: 0.0173, eos_loss: 1.0011, loss: 26.4506, iou: 0.3387, card_penalty: 8.1635, Time: 6.1978
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [23/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0366, loss: 25.3522, iou: 0.3457, card_penalty: 7.8661, Time: 41.9042
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [23/100], Step [20/26], Losses: ingr_loss: 0.0163, eos_loss: 0.9955, loss: 25.2181, iou: 0.3577, card_penalty: 7.8951, Time: 38.8973
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [23/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7494, loss: 29.4866, iou: 0.2282, iou_sample: 0.2554, card_penalty: 8.3357, Time: 7.5897
+loaded data
+logger being reset
+Epoch 24. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [24/100], Step [0/26], Losses: ingr_loss: 0.0173, eos_loss: 0.9640, loss: 26.4450, iou: 0.3673, card_penalty: 8.2232, Time: 5.4716
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [24/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0147, loss: 25.2696, iou: 0.3487, card_penalty: 7.8445, Time: 36.3996
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [24/100], Step [20/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0151, loss: 25.1784, iou: 0.3443, card_penalty: 7.8269, Time: 43.4467
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [24/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7417, loss: 29.6075, iou: 0.2231, iou_sample: 0.2501, card_penalty: 8.3802, Time: 6.6391
+loaded data
+logger being reset
+Epoch 25. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [25/100], Step [0/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0005, loss: 25.3304, iou: 0.3733, card_penalty: 7.9493, Time: 6.6035
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [25/100], Step [10/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0148, loss: 24.9289, iou: 0.3543, card_penalty: 7.7997, Time: 39.3485
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [25/100], Step [20/26], Losses: ingr_loss: 0.0166, eos_loss: 1.0060, loss: 25.4913, iou: 0.3569, card_penalty: 7.9273, Time: 38.2937
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [25/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7383, loss: 29.5994, iou: 0.2243, iou_sample: 0.2582, card_penalty: 8.3777, Time: 5.3664
+loaded data
+logger being reset
+Epoch 26. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [26/100], Step [0/26], Losses: ingr_loss: 0.0165, eos_loss: 1.0435, loss: 25.6473, iou: 0.3456, card_penalty: 8.0859, Time: 6.1215
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [26/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0082, loss: 25.3616, iou: 0.3476, card_penalty: 7.9098, Time: 39.9443
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [26/100], Step [20/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0009, loss: 25.0872, iou: 0.3584, card_penalty: 7.8266, Time: 43.0035
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [26/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7812, loss: 29.4502, iou: 0.2314, iou_sample: 0.2524, card_penalty: 8.3222, Time: 5.7109
+loaded data
+logger being reset
+Epoch 27. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [27/100], Step [0/26], Losses: ingr_loss: 0.0166, eos_loss: 1.1039, loss: 25.5810, iou: 0.3079, card_penalty: 7.8901, Time: 4.9872
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [27/100], Step [10/26], Losses: ingr_loss: 0.0163, eos_loss: 0.9987, loss: 25.2297, iou: 0.3579, card_penalty: 7.8825, Time: 54.1655
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [27/100], Step [20/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0076, loss: 25.2279, iou: 0.3543, card_penalty: 7.8484, Time: 64.4937
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [27/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7573, loss: 29.3792, iou: 0.2205, iou_sample: 0.2507, card_penalty: 8.3623, Time: 6.7328
+loaded data
+logger being reset
+Epoch 28. lr: 0.00008
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [28/100], Step [0/26], Losses: ingr_loss: 0.0174, eos_loss: 1.0363, loss: 26.4680, iou: 0.3245, card_penalty: 8.0434, Time: 8.0800
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [28/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0174, loss: 25.3848, iou: 0.3558, card_penalty: 7.9219, Time: 51.0743
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [28/100], Step [20/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0184, loss: 25.0760, iou: 0.3559, card_penalty: 7.8369, Time: 47.1679
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [28/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7739, loss: 29.4427, iou: 0.2291, iou_sample: 0.2596, card_penalty: 8.3275, Time: 5.6707
+loaded data
+logger being reset
+Epoch 29. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [29/100], Step [0/26], Losses: ingr_loss: 0.0141, eos_loss: 1.0289, loss: 22.3655, iou: 0.3694, card_penalty: 7.2135, Time: 608.6858
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [29/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0054, loss: 25.0144, iou: 0.3620, card_penalty: 7.8191, Time: 75.6547
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [29/100], Step [20/26], Losses: ingr_loss: 0.0167, eos_loss: 1.0019, loss: 25.6771, iou: 0.3544, card_penalty: 7.9839, Time: 78.0272
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [29/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7539, loss: 29.4628, iou: 0.2281, iou_sample: 0.2531, card_penalty: 8.3166, Time: 9.3302
+loaded data
+logger being reset
+Epoch 30. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [30/100], Step [0/26], Losses: ingr_loss: 0.0147, eos_loss: 1.0599, loss: 22.7274, iou: 0.3622, card_penalty: 6.9931, Time: 7.3158
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [30/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0078, loss: 25.0298, iou: 0.3678, card_penalty: 7.8260, Time: 50.8653
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [30/100], Step [20/26], Losses: ingr_loss: 0.0165, eos_loss: 0.9840, loss: 25.3891, iou: 0.3539, card_penalty: 7.9179, Time: 67.8090
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [30/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7593, loss: 29.6120, iou: 0.2321, iou_sample: 0.2639, card_penalty: 8.3626, Time: 7.0404
+loaded data
+logger being reset
+Epoch 31. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [31/100], Step [0/26], Losses: ingr_loss: 0.0173, eos_loss: 0.9836, loss: 26.6811, iou: 0.3365, card_penalty: 8.3626, Time: 6.8066
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [31/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0048, loss: 25.2993, iou: 0.3551, card_penalty: 7.8949, Time: 45.5574
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [31/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0099, loss: 24.8851, iou: 0.3700, card_penalty: 7.7818, Time: 53.3339
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [31/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7778, loss: 29.5555, iou: 0.2307, iou_sample: 0.2602, card_penalty: 8.3597, Time: 5.3565
+loaded data
+logger being reset
+Epoch 32. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [32/100], Step [0/26], Losses: ingr_loss: 0.0168, eos_loss: 1.0134, loss: 25.8432, iou: 0.3393, card_penalty: 7.9974, Time: 6.1908
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [32/100], Step [10/26], Losses: ingr_loss: 0.0165, eos_loss: 1.0028, loss: 25.4315, iou: 0.3578, card_penalty: 7.9195, Time: 42.9584
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [32/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0113, loss: 24.8166, iou: 0.3553, card_penalty: 7.7427, Time: 39.5547
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [32/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7683, loss: 29.5098, iou: 0.2347, iou_sample: 0.2627, card_penalty: 8.3667, Time: 5.8326
+loaded data
+logger being reset
+Epoch 33. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [33/100], Step [0/26], Losses: ingr_loss: 0.0163, eos_loss: 0.9771, loss: 25.1995, iou: 0.3551, card_penalty: 7.8996, Time: 5.9625
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [33/100], Step [10/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0049, loss: 25.2365, iou: 0.3608, card_penalty: 7.8842, Time: 34.2930
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [33/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0253, loss: 24.8520, iou: 0.3572, card_penalty: 7.7494, Time: 45.1330
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [33/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7509, loss: 29.4086, iou: 0.2345, iou_sample: 0.2562, card_penalty: 8.3408, Time: 5.6450
+loaded data
+logger being reset
+Epoch 34. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [34/100], Step [0/26], Losses: ingr_loss: 0.0158, eos_loss: 0.9900, loss: 24.1775, iou: 0.3379, card_penalty: 7.3937, Time: 5.4463
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [34/100], Step [10/26], Losses: ingr_loss: 0.0166, eos_loss: 0.9998, loss: 25.6577, iou: 0.3581, card_penalty: 8.0215, Time: 38.4313
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [34/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0170, loss: 24.9194, iou: 0.3495, card_penalty: 7.7617, Time: 40.8694
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [34/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7457, loss: 29.4496, iou: 0.2312, iou_sample: 0.2631, card_penalty: 8.3513, Time: 5.7020
+loaded data
+logger being reset
+Epoch 35. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [35/100], Step [0/26], Losses: ingr_loss: 0.0167, eos_loss: 1.0272, loss: 25.6304, iou: 0.3580, card_penalty: 7.8942, Time: 7.9219
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [35/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0015, loss: 24.9896, iou: 0.3596, card_penalty: 7.8001, Time: 45.9352
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [35/100], Step [20/26], Losses: ingr_loss: 0.0165, eos_loss: 1.0029, loss: 25.3916, iou: 0.3520, card_penalty: 7.9047, Time: 41.9412
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [35/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7474, loss: 29.5518, iou: 0.2321, iou_sample: 0.2595, card_penalty: 8.3338, Time: 4.9394
+loaded data
+logger being reset
+Epoch 36. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [36/100], Step [0/26], Losses: ingr_loss: 0.0171, eos_loss: 0.9216, loss: 26.2129, iou: 0.3748, card_penalty: 8.2033, Time: 5.9380
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [36/100], Step [10/26], Losses: ingr_loss: 0.0166, eos_loss: 0.9964, loss: 25.6079, iou: 0.3486, card_penalty: 7.9810, Time: 32.0210
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [36/100], Step [20/26], Losses: ingr_loss: 0.0160, eos_loss: 1.0239, loss: 24.8014, iou: 0.3648, card_penalty: 7.7544, Time: 35.4182
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [36/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7610, loss: 29.4585, iou: 0.2347, iou_sample: 0.2611, card_penalty: 8.3549, Time: 4.8782
+loaded data
+logger being reset
+Epoch 37. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [37/100], Step [0/26], Losses: ingr_loss: 0.0164, eos_loss: 0.9444, loss: 25.4109, iou: 0.3735, card_penalty: 8.0621, Time: 5.2615
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [37/100], Step [10/26], Losses: ingr_loss: 0.0165, eos_loss: 1.0093, loss: 25.3597, iou: 0.3591, card_penalty: 7.8924, Time: 38.5728
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [37/100], Step [20/26], Losses: ingr_loss: 0.0158, eos_loss: 1.0250, loss: 24.5194, iou: 0.3651, card_penalty: 7.6711, Time: 46.0548
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [37/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7513, loss: 29.3629, iou: 0.2308, iou_sample: 0.2619, card_penalty: 8.3171, Time: 4.9573
+loaded data
+logger being reset
+Epoch 38. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [38/100], Step [0/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0176, loss: 24.7307, iou: 0.3497, card_penalty: 7.6200, Time: 5.9137
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [38/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0059, loss: 25.3684, iou: 0.3566, card_penalty: 7.9252, Time: 38.0280
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [38/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 0.9956, loss: 24.8934, iou: 0.3587, card_penalty: 7.7887, Time: 33.5217
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [38/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7495, loss: 29.5314, iou: 0.2291, iou_sample: 0.2544, card_penalty: 8.3731, Time: 4.8039
+loaded data
+logger being reset
+Epoch 39. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [39/100], Step [0/26], Losses: ingr_loss: 0.0168, eos_loss: 1.0832, loss: 25.8351, iou: 0.3182, card_penalty: 7.9191, Time: 5.7309
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [39/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0128, loss: 25.0025, iou: 0.3619, card_penalty: 7.8036, Time: 36.2437
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [39/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0165, loss: 24.8827, iou: 0.3632, card_penalty: 7.7876, Time: 37.6783
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [39/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7531, loss: 29.4747, iou: 0.2288, iou_sample: 0.2528, card_penalty: 8.3246, Time: 5.4976
+loaded data
+logger being reset
+Epoch 40. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [40/100], Step [0/26], Losses: ingr_loss: 0.0157, eos_loss: 1.0038, loss: 24.3487, iou: 0.3539, card_penalty: 7.6366, Time: 6.7836
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [40/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0178, loss: 25.3460, iou: 0.3498, card_penalty: 7.8998, Time: 42.4864
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [40/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0030, loss: 24.9287, iou: 0.3674, card_penalty: 7.8082, Time: 44.8142
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [40/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7468, loss: 29.5571, iou: 0.2254, iou_sample: 0.2567, card_penalty: 8.3710, Time: 6.6297
+loaded data
+logger being reset
+Epoch 41. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [41/100], Step [0/26], Losses: ingr_loss: 0.0172, eos_loss: 0.9667, loss: 26.3011, iou: 0.3396, card_penalty: 8.1303, Time: 7.3099
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [41/100], Step [10/26], Losses: ingr_loss: 0.0165, eos_loss: 0.9919, loss: 25.4963, iou: 0.3679, card_penalty: 7.9712, Time: 38.8629
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [41/100], Step [20/26], Losses: ingr_loss: 0.0157, eos_loss: 1.0398, loss: 24.3921, iou: 0.3611, card_penalty: 7.6124, Time: 41.2109
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [41/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7557, loss: 29.4918, iou: 0.2289, iou_sample: 0.2577, card_penalty: 8.3322, Time: 4.0694
+loaded data
+logger being reset
+Epoch 42. lr: 0.00007
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [42/100], Step [0/26], Losses: ingr_loss: 0.0163, eos_loss: 0.9745, loss: 25.0748, iou: 0.3805, card_penalty: 7.8296, Time: 5.2571
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [42/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0136, loss: 24.9255, iou: 0.3588, card_penalty: 7.7583, Time: 35.7570
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [42/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0027, loss: 24.8944, iou: 0.3514, card_penalty: 7.7790, Time: 38.2485
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [42/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7547, loss: 29.5109, iou: 0.2277, iou_sample: 0.2563, card_penalty: 8.3700, Time: 5.2557
+loaded data
+logger being reset
+Epoch 43. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [43/100], Step [0/26], Losses: ingr_loss: 0.0166, eos_loss: 0.9959, loss: 25.5792, iou: 0.3635, card_penalty: 8.0215, Time: 5.8379
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [43/100], Step [10/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0116, loss: 24.8261, iou: 0.3629, card_penalty: 7.7465, Time: 34.2873
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [43/100], Step [20/26], Losses: ingr_loss: 0.0166, eos_loss: 0.9978, loss: 25.5519, iou: 0.3567, card_penalty: 7.9772, Time: 31.6737
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [43/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7381, loss: 29.5659, iou: 0.2331, iou_sample: 0.2644, card_penalty: 8.3541, Time: 5.4765
+loaded data
+logger being reset
+Epoch 44. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [44/100], Step [0/26], Losses: ingr_loss: 0.0166, eos_loss: 0.9649, loss: 25.5080, iou: 0.3617, card_penalty: 7.9267, Time: 5.8397
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [44/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0078, loss: 25.1448, iou: 0.3661, card_penalty: 7.8950, Time: 39.1784
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [44/100], Step [20/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0061, loss: 25.0476, iou: 0.3493, card_penalty: 7.8080, Time: 31.1247
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [44/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7832, loss: 29.5207, iou: 0.2268, iou_sample: 0.2518, card_penalty: 8.3623, Time: 4.9077
+loaded data
+logger being reset
+Epoch 45. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [45/100], Step [0/26], Losses: ingr_loss: 0.0168, eos_loss: 0.9645, loss: 26.0004, iou: 0.3717, card_penalty: 8.1992, Time: 5.1089
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [45/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0168, loss: 25.0463, iou: 0.3635, card_penalty: 7.8192, Time: 26.8954
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [45/100], Step [20/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0147, loss: 25.2962, iou: 0.3556, card_penalty: 7.9131, Time: 44.9394
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [45/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7629, loss: 29.5728, iou: 0.2341, iou_sample: 0.2643, card_penalty: 8.3724, Time: 5.2514
+loaded data
+logger being reset
+Epoch 46. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [46/100], Step [0/26], Losses: ingr_loss: 0.0176, eos_loss: 0.9874, loss: 26.9686, iou: 0.3582, card_penalty: 8.3426, Time: 8.0299
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [46/100], Step [10/26], Losses: ingr_loss: 0.0161, eos_loss: 0.9952, loss: 24.8940, iou: 0.3505, card_penalty: 7.7666, Time: 40.6101
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [46/100], Step [20/26], Losses: ingr_loss: 0.0167, eos_loss: 1.0094, loss: 25.6768, iou: 0.3606, card_penalty: 8.0156, Time: 39.5201
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [46/100], Step [0/2], Losses: ingr_loss: 0.0206, eos_loss: 0.7356, loss: 29.6950, iou: 0.2269, iou_sample: 0.2576, card_penalty: 8.3873, Time: 6.1452
+loaded data
+logger being reset
+Epoch 47. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [47/100], Step [0/26], Losses: ingr_loss: 0.0156, eos_loss: 1.0576, loss: 24.0862, iou: 0.3456, card_penalty: 7.4277, Time: 8.9935
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [47/100], Step [10/26], Losses: ingr_loss: 0.0166, eos_loss: 1.0051, loss: 25.5562, iou: 0.3591, card_penalty: 7.9731, Time: 34.0418
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [47/100], Step [20/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0172, loss: 25.1544, iou: 0.3450, card_penalty: 7.8557, Time: 42.3308
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [47/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7391, loss: 29.3612, iou: 0.2245, iou_sample: 0.2522, card_penalty: 8.3411, Time: 4.7853
+loaded data
+logger being reset
+Epoch 48. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [48/100], Step [0/26], Losses: ingr_loss: 0.0158, eos_loss: 1.0201, loss: 24.4525, iou: 0.3858, card_penalty: 7.6311, Time: 10.2418
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [48/100], Step [10/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0325, loss: 24.9603, iou: 0.3593, card_penalty: 7.7895, Time: 38.1921
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [48/100], Step [20/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0056, loss: 25.2494, iou: 0.3629, card_penalty: 7.8801, Time: 41.6322
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [48/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7516, loss: 29.6188, iou: 0.2316, iou_sample: 0.2576, card_penalty: 8.3434, Time: 5.8984
+loaded data
+logger being reset
+Epoch 49. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [49/100], Step [0/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0218, loss: 25.3863, iou: 0.3755, card_penalty: 7.9779, Time: 6.6057
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [49/100], Step [10/26], Losses: ingr_loss: 0.0159, eos_loss: 1.0222, loss: 24.6067, iou: 0.3611, card_penalty: 7.6986, Time: 39.5728
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [49/100], Step [20/26], Losses: ingr_loss: 0.0166, eos_loss: 0.9974, loss: 25.5351, iou: 0.3556, card_penalty: 7.9655, Time: 36.9945
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [49/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7408, loss: 29.5610, iou: 0.2256, iou_sample: 0.2579, card_penalty: 8.3500, Time: 5.0364
+loaded data
+logger being reset
+Epoch 50. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [50/100], Step [0/26], Losses: ingr_loss: 0.0168, eos_loss: 1.0298, loss: 25.8769, iou: 0.3740, card_penalty: 8.0869, Time: 5.4510
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [50/100], Step [10/26], Losses: ingr_loss: 0.0159, eos_loss: 0.9920, loss: 24.5633, iou: 0.3670, card_penalty: 7.7210, Time: 38.0038
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [50/100], Step [20/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0286, loss: 25.0057, iou: 0.3444, card_penalty: 7.7889, Time: 44.5809
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [50/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7488, loss: 29.5504, iou: 0.2282, iou_sample: 0.2596, card_penalty: 8.3828, Time: 5.3382
+loaded data
+logger being reset
+Epoch 51. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [51/100], Step [0/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0023, loss: 25.2399, iou: 0.3705, card_penalty: 7.9009, Time: 6.2638
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [51/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0061, loss: 25.1093, iou: 0.3564, card_penalty: 7.8736, Time: 39.1390
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [51/100], Step [20/26], Losses: ingr_loss: 0.0160, eos_loss: 1.0210, loss: 24.6985, iou: 0.3641, card_penalty: 7.7165, Time: 36.2354
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [51/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7430, loss: 29.6376, iou: 0.2298, iou_sample: 0.2594, card_penalty: 8.3838, Time: 6.5790
+loaded data
+logger being reset
+Epoch 52. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [52/100], Step [0/26], Losses: ingr_loss: 0.0158, eos_loss: 1.0205, loss: 24.2891, iou: 0.3669, card_penalty: 7.5132, Time: 6.1795
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [52/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0023, loss: 25.2526, iou: 0.3567, card_penalty: 7.8635, Time: 40.5629
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [52/100], Step [20/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0008, loss: 25.1774, iou: 0.3644, card_penalty: 7.9150, Time: 35.7871
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [52/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7450, loss: 29.6688, iou: 0.2320, iou_sample: 0.2587, card_penalty: 8.3785, Time: 5.4663
+loaded data
+logger being reset
+Epoch 53. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [53/100], Step [0/26], Losses: ingr_loss: 0.0153, eos_loss: 1.0084, loss: 23.7745, iou: 0.3669, card_penalty: 7.4527, Time: 6.1243
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [53/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0164, loss: 25.1031, iou: 0.3600, card_penalty: 7.8530, Time: 39.2481
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [53/100], Step [20/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0144, loss: 25.1355, iou: 0.3507, card_penalty: 7.8659, Time: 42.2699
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [53/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7519, loss: 29.4946, iou: 0.2331, iou_sample: 0.2565, card_penalty: 8.3237, Time: 4.7371
+loaded data
+logger being reset
+Epoch 54. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [54/100], Step [0/26], Losses: ingr_loss: 0.0164, eos_loss: 0.9852, loss: 25.2960, iou: 0.3545, card_penalty: 7.9292, Time: 7.4159
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [54/100], Step [10/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0091, loss: 24.9126, iou: 0.3624, card_penalty: 7.7856, Time: 37.5080
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [54/100], Step [20/26], Losses: ingr_loss: 0.0166, eos_loss: 0.9955, loss: 25.6001, iou: 0.3520, card_penalty: 7.9680, Time: 34.9942
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [54/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7527, loss: 29.5004, iou: 0.2243, iou_sample: 0.2543, card_penalty: 8.3398, Time: 4.7464
+loaded data
+logger being reset
+Epoch 55. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [55/100], Step [0/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0153, loss: 24.9437, iou: 0.3289, card_penalty: 7.7251, Time: 5.7403
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [55/100], Step [10/26], Losses: ingr_loss: 0.0163, eos_loss: 1.0009, loss: 25.1356, iou: 0.3594, card_penalty: 7.8573, Time: 32.1608
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [55/100], Step [20/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0229, loss: 25.0754, iou: 0.3639, card_penalty: 7.8307, Time: 40.2956
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [55/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7610, loss: 29.5063, iou: 0.2321, iou_sample: 0.2570, card_penalty: 8.3783, Time: 8.0782
+loaded data
+logger being reset
+Epoch 56. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [56/100], Step [0/26], Losses: ingr_loss: 0.0165, eos_loss: 1.0146, loss: 25.1538, iou: 0.3307, card_penalty: 7.6752, Time: 5.5179
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [56/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 0.9961, loss: 25.2457, iou: 0.3521, card_penalty: 7.8828, Time: 35.1948
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [56/100], Step [20/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0019, loss: 25.0167, iou: 0.3580, card_penalty: 7.8248, Time: 34.9873
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [56/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7636, loss: 29.5034, iou: 0.2252, iou_sample: 0.2575, card_penalty: 8.3582, Time: 4.9976
+loaded data
+logger being reset
+Epoch 57. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [57/100], Step [0/26], Losses: ingr_loss: 0.0169, eos_loss: 1.0008, loss: 25.8628, iou: 0.3422, card_penalty: 7.9853, Time: 6.8495
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [57/100], Step [10/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0113, loss: 24.7978, iou: 0.3536, card_penalty: 7.7118, Time: 33.7513
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [57/100], Step [20/26], Losses: ingr_loss: 0.0166, eos_loss: 1.0026, loss: 25.5762, iou: 0.3575, card_penalty: 8.0054, Time: 36.0176
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [57/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7525, loss: 29.3747, iou: 0.2359, iou_sample: 0.2596, card_penalty: 8.3553, Time: 4.9013
+loaded data
+logger being reset
+Epoch 58. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [58/100], Step [0/26], Losses: ingr_loss: 0.0157, eos_loss: 1.0736, loss: 24.2553, iou: 0.3688, card_penalty: 7.4563, Time: 5.5873
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [58/100], Step [10/26], Losses: ingr_loss: 0.0162, eos_loss: 0.9983, loss: 25.0520, iou: 0.3559, card_penalty: 7.8235, Time: 36.2479
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [58/100], Step [20/26], Losses: ingr_loss: 0.0164, eos_loss: 0.9896, loss: 25.3245, iou: 0.3478, card_penalty: 7.9158, Time: 43.9837
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [58/100], Step [0/2], Losses: ingr_loss: 0.0203, eos_loss: 0.7513, loss: 29.3879, iou: 0.2328, iou_sample: 0.2559, card_penalty: 8.3291, Time: 4.6532
+loaded data
+logger being reset
+Epoch 59. lr: 0.00006
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [59/100], Step [0/26], Losses: ingr_loss: 0.0167, eos_loss: 0.9919, loss: 25.6591, iou: 0.3165, card_penalty: 7.9429, Time: 6.3463
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [59/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0155, loss: 25.3109, iou: 0.3533, card_penalty: 7.8706, Time: 35.8650
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [59/100], Step [20/26], Losses: ingr_loss: 0.0164, eos_loss: 0.9892, loss: 25.2934, iou: 0.3568, card_penalty: 7.9252, Time: 33.3029
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [59/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7555, loss: 29.5718, iou: 0.2281, iou_sample: 0.2593, card_penalty: 8.3469, Time: 6.5322
+loaded data
+logger being reset
+Epoch 60. lr: 0.00005
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [60/100], Step [0/26], Losses: ingr_loss: 0.0168, eos_loss: 1.0801, loss: 25.7436, iou: 0.3416, card_penalty: 7.9012, Time: 8.2613
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [60/100], Step [10/26], Losses: ingr_loss: 0.0165, eos_loss: 1.0025, loss: 25.4150, iou: 0.3578, card_penalty: 7.9540, Time: 34.6338
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [60/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0199, loss: 24.9075, iou: 0.3606, card_penalty: 7.7705, Time: 32.4899
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [60/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7494, loss: 29.5792, iou: 0.2297, iou_sample: 0.2578, card_penalty: 8.3695, Time: 4.8924
+loaded data
+logger being reset
+Epoch 61. lr: 0.00005
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [61/100], Step [0/26], Losses: ingr_loss: 0.0160, eos_loss: 0.9807, loss: 24.7352, iou: 0.3385, card_penalty: 7.7160, Time: 6.7977
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [61/100], Step [10/26], Losses: ingr_loss: 0.0164, eos_loss: 1.0085, loss: 25.2666, iou: 0.3547, card_penalty: 7.8824, Time: 40.6799
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [61/100], Step [20/26], Losses: ingr_loss: 0.0161, eos_loss: 1.0117, loss: 24.9160, iou: 0.3595, card_penalty: 7.7758, Time: 28.1615
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [61/100], Step [0/2], Losses: ingr_loss: 0.0205, eos_loss: 0.7561, loss: 29.6260, iou: 0.2312, iou_sample: 0.2543, card_penalty: 8.3689, Time: 7.2206
+loaded data
+logger being reset
+Epoch 62. lr: 0.00005
+model trained
+26
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: train, Epoch [62/100], Step [0/26], Losses: ingr_loss: 0.0162, eos_loss: 1.0132, loss: 24.9457, iou: 0.3667, card_penalty: 7.7550, Time: 5.0323
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [62/100], Step [10/26], Losses: ingr_loss: 0.0159, eos_loss: 1.0043, loss: 24.6476, iou: 0.3696, card_penalty: 7.7274, Time: 31.3673
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+Split: train, Epoch [62/100], Step [20/26], Losses: ingr_loss: 0.0167, eos_loss: 0.9981, loss: 25.6757, iou: 0.3493, card_penalty: 7.9692, Time: 40.1764
+loaded data
+loaded data
+loaded data
+loaded data
+loaded data
+2
+iter starting
+iter ending
+synchronization starting
+sync done
+loaded data
+Split: val, Epoch [62/100], Step [0/2], Losses: ingr_loss: 0.0204, eos_loss: 0.7782, loss: 29.4872, iou: 0.2435, iou_sample: 0.2690, card_penalty: 8.3334, Time: 5.7603
+loaded data
+logger closing

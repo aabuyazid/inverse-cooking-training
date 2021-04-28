@@ -1,0 +1,7 @@
+Namespace(aux_data_dir='../data', batch_size=128, beam=-1, crop_size=224, current_epoch=7, decay_lr=True, dropout_decoder_i=0.3, dropout_decoder_r=0.3, dropout_encoder=0.3, embed_size=512, es_metric='loss', eval_split='test', finetune_after=-1, get_perplexity=False, greedy=True, image_model='resnet50', image_size=256, ingrs_only=False, label_smoothing_ingr=0.1, learning_rate=0.001, log_step=10, log_term=False, loss_weight=[1.0, 0.0, 0.0, 0.0], lr_decay_every=1, lr_decay_rate=0.99, max_eval=200, maxnumims=5, maxnuminstrs=10, maxnumlabels=20, maxseqlen=15, model_name='model', n_att=8, n_att_ingrs=4, num_epochs=100, num_workers=1, numgens=3, patience=50, project_name='inversecooking', recipe1m_dir='/scratch/ntallapr/inversecooking/data', recipe_only=False, resume=False, save_dir='/scratch/ntallapr/inversecooking/test1', scale_learning_rate_cnn=0.01, suff='', temperature=1.0, tensorboard=True, transf_layers=16, transf_layers_ingrs=4, transfer_from='im2ingr', use_lmdb=True, use_true_ingrs=False, weight_decay=0.0)
+accuracy 0.9940478
+f1 0.3510900473450738
+jaccard 0.21292251092204614
+f1_ingredients 0.00609947
+/scratch/ntallapr/inversecooking/test1/inversecooking/model/checkpoints/test_greedy_gencaps.pkl
+Number of samples with excessive repetitions: 81
